@@ -34,3 +34,7 @@ Thumbs.db
 
 # Prisma
 apps/api/prisma/migrations/dev.db*
+
+# Supabase — état local du CLI (référence de projet, identifiants)
+supabase/.temp/
+supabase/.branches/

@@ -1,8 +1,11 @@
 import type { LeaderboardEntry, LeaderboardStats } from './types';
 
 /**
- * Noms des événements Socket.IO, partagés serveur <-> écran d'affichage.
- * Utiliser ces constantes des deux côtés pour éviter les fautes de frappe.
+ * Noms des événements de diffusion **Supabase Realtime**, échangés entre les
+ * écrans de projection (canal `quiz-live`).
+ *
+ * Le classement, lui, ne passe pas par ces événements : il est poussé par
+ * Realtime sur les changements de la table `result`.
  */
 export const SOCKET_EVENTS = {
   /** Serveur -> écran : classement général mis à jour. */

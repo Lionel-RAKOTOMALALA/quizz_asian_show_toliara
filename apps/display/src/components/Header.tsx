@@ -7,7 +7,7 @@ interface Props {
   onTab: (tab: Tab) => void;
   /** Passe au rouge quand l'API ne répond plus. */
   connected: boolean;
-  /** Socket absent : on affiche encore les données, mais via le repli REST. */
+  /** Realtime absent : données encore affichées, mais via le repli périodique. */
   degraded?: boolean;
 }
 

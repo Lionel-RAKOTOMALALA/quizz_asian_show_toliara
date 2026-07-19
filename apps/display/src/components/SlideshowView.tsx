@@ -2,18 +2,21 @@
 
 import { QUIZ_CONFIG, SOCKET_EVENTS } from "@quizz/shared";
 import type { LeaderboardEntry, Round2Phase } from "@quizz/shared";
+import type { RealtimeChannel } from "@supabase/supabase-js";
 import { useCallback, useEffect, useState } from "react";
-import type { Socket } from "socket.io-client";
 
 interface Props {
   finalists: LeaderboardEntry[];
-  /** Permet de synchroniser le diaporama entre plusieurs écrans. */
-  socket: Socket | null;
+  /**
+   * Canal Realtime : synchronise le diaporama entre écrans via des messages
+   * de diffusion (éphémères, jamais stockés en base).
+   */
+  channel: RealtimeChannel | null;
 }
 
 const TOTAL = QUIZ_CONFIG.round2ImageCount;
 
-export function SlideshowView({ finalists, socket }: Props) {
+export function SlideshowView({ finalists, channel }: Props) {
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
   /** Points du 2e tour, attribués à la main par l'animateur. */
@@ -24,12 +27,13 @@ export function SlideshowView({ finalists, socket }: Props) {
     (nextIndex: number, phase: Round2Phase) => {
       setIndex(nextIndex);
       setRevealed(phase === "revealed");
-      socket?.emit(SOCKET_EVENTS.ROUND2_IMAGE, {
-        index: nextIndex,
-        phase,
+      void channel?.send({
+        type: "broadcast",
+        event: SOCKET_EVENTS.ROUND2_IMAGE,
+        payload: { index: nextIndex, phase },
       });
     },
-    [socket],
+    [channel],
   );
 
   const prev = useCallback(
@@ -49,23 +53,25 @@ export function SlideshowView({ finalists, socket }: Props) {
 
   // Réception des commandes émises par un autre écran.
   useEffect(() => {
-    if (!socket) return;
+    if (!channel) return;
 
-    function onImage(payload: { index: number; phase: Round2Phase }) {
-      setIndex(payload.index);
-      setRevealed(payload.phase === "revealed");
-    }
-    function onScore(payload: { ticket: string; points: number }) {
-      setPoints((p) => ({ ...p, [payload.ticket]: payload.points }));
-    }
+    channel.on(
+      "broadcast",
+      { event: SOCKET_EVENTS.ROUND2_IMAGE },
+      ({ payload }: { payload: { index: number; phase: Round2Phase } }) => {
+        setIndex(payload.index);
+        setRevealed(payload.phase === "revealed");
+      },
+    );
 
-    socket.on(SOCKET_EVENTS.ROUND2_IMAGE, onImage);
-    socket.on(SOCKET_EVENTS.ROUND2_SCORE, onScore);
-    return () => {
-      socket.off(SOCKET_EVENTS.ROUND2_IMAGE, onImage);
-      socket.off(SOCKET_EVENTS.ROUND2_SCORE, onScore);
-    };
-  }, [socket]);
+    channel.on(
+      "broadcast",
+      { event: SOCKET_EVENTS.ROUND2_SCORE },
+      ({ payload }: { payload: { ticket: string; points: number } }) => {
+        setPoints((p) => ({ ...p, [payload.ticket]: payload.points }));
+      },
+    );
+  }, [channel]);
 
   // Raccourcis clavier annoncés en pied de page.
   useEffect(() => {
@@ -149,7 +155,7 @@ export function SlideshowView({ finalists, socket }: Props) {
 
         <p className="mt-4 text-center text-[11px] text-muted-dim/70">
           Raccourcis clavier : ←→ naviguer · Espace : révéler ·{" "}
-          {socket ? "synchronisé via le serveur local (WebSocket)" : "hors ligne"}
+          {channel ? "synchronisé entre écrans (Supabase Realtime)" : "hors ligne"}
         </p>
       </section>
 
@@ -190,9 +196,10 @@ export function SlideshowView({ finalists, socket }: Props) {
                   onClick={() => {
                     const value = (points[f.ticket] ?? 0) + 1;
                     setPoints((p) => ({ ...p, [f.ticket]: value }));
-                    socket?.emit(SOCKET_EVENTS.ROUND2_SCORE, {
-                      ticket: f.ticket,
-                      points: value,
+                    void channel?.send({
+                      type: "broadcast",
+                      event: SOCKET_EVENTS.ROUND2_SCORE,
+                      payload: { ticket: f.ticket, points: value },
                     });
                   }}
                   aria-label={`Ajouter un point à ${f.playerName ?? f.ticket}`}

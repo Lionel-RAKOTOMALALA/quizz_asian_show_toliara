@@ -8,7 +8,7 @@ import { useLiveData } from "@/lib/useLiveData";
 
 export default function Home() {
   const [tab, setTab] = useState<Tab>("ranking");
-  const { entries, stats, finalists, connected, degraded, socket } =
+  const { entries, stats, finalists, connected, degraded, channel } =
     useLiveData();
 
   return (
@@ -28,7 +28,7 @@ export default function Home() {
           onLaunchRound2={() => setTab("slideshow")}
         />
       ) : (
-        <SlideshowView finalists={finalists} socket={socket} />
+        <SlideshowView finalists={finalists} channel={channel} />
       )}
     </>
   );
