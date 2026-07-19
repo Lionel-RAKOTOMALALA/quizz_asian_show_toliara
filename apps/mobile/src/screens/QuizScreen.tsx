@@ -7,6 +7,7 @@ const LETTERS = ['A', 'B', 'C', 'D'];
 
 interface Props {
   questions: ServedQuestion[];
+  /** Temps restant au démarrage — inférieur au total si la partie reprend. */
   secondsGlobal: number;
   /** Enregistre une réponse. `null` = non répondue (temps écoulé). */
   onAnswer: (q: ServedQuestion, chosenIndex: number | null, answerMs: number) => void;

@@ -63,6 +63,13 @@ Deno.serve(async (req) => {
   if (sessionError) return fail(sessionError.message, 500);
   if (!session) return fail(`Session introuvable : ${sessionId}`, 404);
 
+  // Signe de vie : c'est ce qui maintient le verrou et empêche un second
+  // appareil de reprendre la session tant que celui-ci répond.
+  await supabase
+    .from('session')
+    .update({ last_seen_at: new Date().toISOString() })
+    .eq('id', session.id);
+
   const category = session.category as Category;
 
   // La question doit appartenir au tirage de CETTE session : sinon un joueur

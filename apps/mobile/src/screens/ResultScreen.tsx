@@ -1,8 +1,10 @@
-import { CATEGORY_LABELS } from '@quizz/shared';
+import { CATEGORY_LABELS, QUIZ_CONFIG } from '@quizz/shared';
 import type { Category, LeaderboardEntry } from '@quizz/shared';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Card, SectionLabel } from '../components/ui';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Celebration } from '../components/Celebration';
+import { Card, GradientButton, SectionLabel } from '../components/ui';
+import { consolationJoke } from '../data/jokes';
 import { colors, radius, spacing } from '../theme';
 
 interface Props {
@@ -13,7 +15,8 @@ interface Props {
   total: number;
   answered: number;
   leaderboard: LeaderboardEntry[];
-  onRestart: () => void;
+  /** Ouvre les consignes du 2e tour — seulement proposé aux qualifiés. */
+  onNextRound: () => void;
 }
 
 export function ResultScreen({
@@ -24,17 +27,20 @@ export function ResultScreen({
   total,
   answered,
   leaderboard,
-  onRestart,
+  onNextRound,
 }: Props) {
   const me = leaderboard.find((e) => e.ticket === ticket);
   const qualified = me?.qualified ?? false;
 
   return (
-    <ScrollView
-      style={styles.root}
-      contentContainerStyle={styles.content}
-      showsVerticalScrollIndicator={false}
-    >
+    <View style={styles.root}>
+      {/* Paillettes et feux d'artifice, en surimpression et non cliquables. */}
+      {qualified && <Celebration />}
+
+      <ScrollView
+        contentContainerStyle={styles.content}
+        showsVerticalScrollIndicator={false}
+      >
       <Text style={styles.eyebrow}>
         Épreuve terminée · {answered}/{total} répondues
       </Text>
@@ -56,6 +62,18 @@ export function ResultScreen({
       ) : (
         <View style={styles.notQualifiedPill}>
           <Text style={styles.notQualifiedText}>Non qualifié·e</Text>
+        </View>
+      )}
+
+      {!qualified && (
+        // Message de consolation dans l'univers de la catégorie jouée.
+        <View style={styles.jokeCard}>
+          <Text style={styles.jokeEmoji}>
+            {category === 'anime' ? '🍥' : '🎤'}
+          </Text>
+          <Text style={styles.jokeText}>
+            {consolationJoke(category, ticket)}
+          </Text>
         </View>
       )}
 
@@ -105,14 +123,31 @@ export function ResultScreen({
         référence). Les qualifié·e·s sont appelé·e·s pour le 2e tour.
       </Text>
 
-      <Pressable
-        onPress={onRestart}
-        style={styles.restart}
-        accessibilityRole="button"
-      >
-        <Text style={styles.restartText}>Rejouer la démo</Text>
-      </Pressable>
-    </ScrollView>
+      {qualified ? (
+        <View style={styles.cta}>
+          <GradientButton
+            label="Passer au 2e tour →"
+            onPress={onNextRound}
+            gradient={[colors.green, '#0F7C48']}
+          />
+        </View>
+      ) : (
+        // Pas de bouton : l'épreuve est finie pour ce participant, lui en
+        // proposer un serait une impasse. On l'invite plutôt à rester.
+        <View style={styles.stayCard}>
+          <Text style={styles.stayTitle}>Le concours continue</Text>
+          <Text style={styles.stayText}>
+            Le 2e tour démarre bientôt sur grand écran : les{' '}
+            {QUIZ_CONFIG.qualifiedCount} finalistes devront reconnaître des
+            idoles et des personnages à leur seule silhouette.
+          </Text>
+          <Text style={styles.stayText}>
+            Reste avec nous pour les encourager.
+          </Text>
+        </View>
+      )}
+      </ScrollView>
+    </View>
   );
 }
 
@@ -178,6 +213,27 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
 
+  jokeCard: {
+    marginTop: spacing(4),
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: spacing(3),
+    backgroundColor: '#FFF6EC',
+    borderWidth: 1,
+    borderColor: '#F6DFC5',
+    borderRadius: radius.lg,
+    paddingVertical: spacing(4),
+    paddingHorizontal: spacing(4),
+  },
+  jokeEmoji: { fontSize: 20, marginTop: -2 },
+  jokeText: {
+    flex: 1,
+    fontSize: 13,
+    lineHeight: 19,
+    color: colors.textSoft,
+    fontStyle: 'italic',
+  },
+
   meta: {
     marginTop: spacing(3),
     fontSize: 12,
@@ -222,14 +278,28 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 
-  restart: {
+  cta: { alignSelf: 'stretch', marginTop: spacing(5) },
+
+  stayCard: {
+    alignSelf: 'stretch',
     marginTop: spacing(5),
+    gap: spacing(2),
+    backgroundColor: 'rgba(255,255,255,0.72)',
     borderWidth: 1,
     borderColor: colors.cardBorder,
-    backgroundColor: 'rgba(255,255,255,0.7)',
-    borderRadius: radius.pill,
-    paddingHorizontal: spacing(7),
-    paddingVertical: spacing(3.5),
+    borderRadius: radius.lg,
+    padding: spacing(5),
   },
-  restartText: { fontSize: 14, fontWeight: '700', color: colors.textSoft },
+  stayTitle: {
+    fontSize: 15,
+    fontWeight: '800',
+    color: colors.text,
+    textAlign: 'center',
+  },
+  stayText: {
+    fontSize: 13,
+    lineHeight: 19,
+    color: colors.textSoft,
+    textAlign: 'center',
+  },
 });

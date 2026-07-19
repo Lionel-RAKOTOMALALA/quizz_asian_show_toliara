@@ -11,9 +11,11 @@ import { colors, radius, spacing } from '../theme';
 
 interface Props {
   onContinue: (input: { ticket: string; playerName?: string }) => void;
+  /** Vérification du ticket en cours auprès du serveur. */
+  busy?: boolean;
 }
 
-export function TicketScreen({ onContinue }: Props) {
+export function TicketScreen({ onContinue, busy }: Props) {
   const [ticket, setTicket] = useState('');
   const [playerName, setPlayerName] = useState('');
   const [accepted, setAccepted] = useState(false);
@@ -37,7 +39,7 @@ export function TicketScreen({ onContinue }: Props) {
           <Text style={styles.titleOrange}>Anime</Text>
         </Text>
         <Text style={styles.subtitle}>
-          Salle polyvalente · réseau local, sans Internet
+          Salle polyvalente 
         </Text>
       </View>
 
@@ -111,6 +113,7 @@ export function TicketScreen({ onContinue }: Props) {
         <GradientButton
           label="Continuer"
           disabled={!canContinue}
+          loading={busy}
           onPress={() =>
             onContinue({
               ticket,

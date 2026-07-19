@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "pnpm --filter @quizz/shared build && next dev",
+    "//build": "`dist/` de @quizz/shared est gitignore : sur un clone neuf (Vercel, CI) il faut le compiler avant Next, sinon l'import echoue.",
+    "build": "pnpm --filter @quizz/shared build && next build",
     "start": "next start",
     "lint": "eslint"
   },

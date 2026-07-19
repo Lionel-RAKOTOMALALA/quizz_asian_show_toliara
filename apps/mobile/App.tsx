@@ -6,16 +6,23 @@ import {
   SafeAreaProvider,
   SafeAreaView,
 } from 'react-native-safe-area-context';
-import { ApiError, api, type ServedQuestion } from './src/api';
+import {
+  ApiError,
+  api,
+  type ServedQuestion,
+  type SessionResponse,
+} from './src/api';
+import { getDeviceId } from './src/device';
 import { ErrorNote, Screen } from './src/components/ui';
 import { BriefScreen } from './src/screens/BriefScreen';
 import { CategoryScreen } from './src/screens/CategoryScreen';
 import { QuizScreen } from './src/screens/QuizScreen';
 import { ResultScreen } from './src/screens/ResultScreen';
+import { Round2Screen } from './src/screens/Round2Screen';
 import { TicketScreen } from './src/screens/TicketScreen';
 import { spacing } from './src/theme';
 
-type Step = 'ticket' | 'category' | 'brief' | 'quiz' | 'result';
+type Step = 'ticket' | 'category' | 'brief' | 'quiz' | 'result' | 'round2';
 
 /**
  * Nombre de questions annoncé sur les cartes de catégorie, aligné sur les
@@ -92,12 +99,9 @@ export default function App() {
         ticket,
         playerName: playerName ?? undefined,
         category: chosen,
+        deviceId: await getDeviceId(),
       });
-      setCategory(chosen);
-      setSessionId(session.sessionId);
-      setPlayerName(session.playerName);
-      setSecondsGlobal(session.secondsGlobal);
-      setStep('brief');
+      applySession(session);
     } catch (e) {
       setError(e instanceof ApiError ? e.message : 'Impossible de démarrer.');
     } finally {
@@ -105,13 +109,93 @@ export default function App() {
     }
   }
 
-  async function startQuiz() {
+  /**
+   * Vérifie le ticket dès sa saisie, avant même de demander la catégorie.
+   *
+   * C'est le serveur qui décide de la destination : lui seul sait si le ticket
+   * existe, s'il a déjà servi, et où le participant s'était arrêté.
+   */
+  async function checkTicket(code: string, name?: string) {
     setBusy(true);
     setError(null);
     try {
-      const data = await api.startQuiz(sessionId);
+      const session = await api.createSession({
+        ticket: code,
+        playerName: name,
+        deviceId: await getDeviceId(),
+      });
+
+      setTicket(code);
+      setPlayerName(name ?? null);
+
+      if (session.status === 'needs_category') {
+        setStep('category');
+        return;
+      }
+
+      applySession(session);
+    } catch (e) {
+      // Ticket inconnu (404) ou déjà pris sur un autre appareil (409) :
+      // le message du serveur est affichable tel quel.
+      setError(e instanceof ApiError ? e.message : 'Vérification impossible.');
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  /** Route le participant selon l'état réel de sa partie côté serveur. */
+  function applySession(session: SessionResponse) {
+    setCategory(session.category);
+    setSessionId(session.sessionId);
+    setPlayerName(session.playerName);
+    setSecondsGlobal(session.secondsGlobal);
+    setScore(session.score);
+    setAnswered(session.answered);
+
+    if (session.finished) {
+      // Épreuve déjà terminée : on va droit au résultat, sans rejouer.
+      void showResults(session.sessionId);
+      return;
+    }
+
+    setStep(session.resumed ? 'quiz' : 'brief');
+    if (session.resumed) void startQuiz(session.sessionId);
+  }
+
+  async function showResults(id: string) {
+    setBusy(true);
+    try {
+      const data = await api.startQuiz(id);
       setQuestions(data.questions);
-      setSecondsGlobal(data.secondsGlobal);
+      setLeaderboard(await api.leaderboard());
+    } catch {
+      // Le classement peut manquer : le score affiché reste correct.
+    } finally {
+      setBusy(false);
+      setStep('result');
+    }
+  }
+
+  async function startQuiz(id = sessionId) {
+    setBusy(true);
+    setError(null);
+    try {
+      const data = await api.startQuiz(id);
+
+      // À la reprise, on retire les questions déjà traitées : le participant
+      // ne doit ni les revoir ni pouvoir y répondre deux fois.
+      const alreadyAnswered = new Set(data.answeredIds);
+      const remaining = data.questions.filter((q) => !alreadyAnswered.has(q.id));
+
+      setQuestions(remaining);
+      // Chrono déjà entamé : on repart du temps réellement restant.
+      setSecondsGlobal(data.secondsRemaining);
+
+      if (remaining.length === 0 || data.secondsRemaining <= 0) {
+        void showResults(id);
+        return;
+      }
+
       setStep('quiz');
     } catch (e) {
       setError(e instanceof ApiError ? e.message : 'Questions indisponibles.');
@@ -120,18 +204,6 @@ export default function App() {
     }
   }
 
-  function restart() {
-    setStep('ticket');
-    setError(null);
-    setTicket('');
-    setPlayerName(null);
-    setSessionId('');
-    setQuestions([]);
-    setScore(0);
-    setAnswered(0);
-    setLeaderboard([]);
-    pending.current = Promise.resolve();
-  }
 
   return (
     <SafeAreaProvider>
@@ -147,12 +219,10 @@ export default function App() {
 
         {step === 'ticket' && (
           <TicketScreen
-            onContinue={({ ticket: t, playerName: name }) => {
-              setTicket(t);
-              setPlayerName(name ?? null);
-              setError(null);
-              setStep('category');
-            }}
+            busy={busy}
+            onContinue={({ ticket: t, playerName: name }) =>
+              void checkTicket(t, name)
+            }
           />
         )}
 
@@ -192,7 +262,16 @@ export default function App() {
             total={questions.length || 20}
             answered={answered}
             leaderboard={leaderboard}
-            onRestart={restart}
+            onNextRound={() => setStep('round2')}
+          />
+        )}
+
+        {step === 'round2' && (
+          <Round2Screen
+            ticket={ticket}
+            rank={leaderboard.find((e) => e.ticket === ticket)?.rank ?? 0}
+            finalists={leaderboard.filter((e) => e.qualified)}
+            onBack={() => setStep('result')}
           />
         )}
       </SafeAreaView>

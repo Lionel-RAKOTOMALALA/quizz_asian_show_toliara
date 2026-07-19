@@ -2,15 +2,19 @@
 
 import type { Session } from "@supabase/supabase-js";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { ConfirmDialog } from "@/components/admin/ConfirmDialog";
 import { LoginForm } from "@/components/admin/LoginForm";
 import { QuestionEditor } from "@/components/admin/QuestionEditor";
+import { TicketManager } from "@/components/admin/TicketManager";
 import { supabase, type Category, type QuestionRow } from "@/lib/supabase";
 
 type Filter = "all" | Category;
+type AdminTab = "questions" | "tickets";
 
 export default function AdminPage() {
   const [session, setSession] = useState<Session | null>(null);
   const [ready, setReady] = useState(false);
+  const [tab, setTab] = useState<AdminTab>("questions");
 
   const [questions, setQuestions] = useState<QuestionRow[]>([]);
   const [loading, setLoading] = useState(false);
@@ -21,6 +25,7 @@ export default function AdminPage() {
   const [editing, setEditing] = useState<QuestionRow | null | undefined>(
     undefined,
   );
+  const [pendingDelete, setPendingDelete] = useState<QuestionRow | null>(null);
 
   // État de connexion.
   useEffect(() => {
@@ -96,13 +101,7 @@ export default function AdminPage() {
   }
 
   async function remove(q: QuestionRow) {
-    if (
-      !confirm(
-        `Supprimer définitivement ${q.id} ?\n\n« ${q.prompt.slice(0, 80)}… »`,
-      )
-    ) {
-      return;
-    }
+    setPendingDelete(null);
 
     const { error } = await supabase.from("question").delete().eq("id", q.id);
     if (error) setError(error.message);
@@ -141,11 +140,12 @@ export default function AdminPage() {
       <header className="flex flex-wrap items-center justify-between gap-4 py-5">
         <div>
           <h1 className="text-[17px] font-extrabold tracking-tight">
-            Administration des questions
+            Administration
           </h1>
           <p className="mt-1 text-[12px] text-muted-dim">
-            {counts.kpop} K-pop · {counts.anime} Anime ·{" "}
-            {questions.length} au total
+            {tab === "questions"
+              ? `${counts.kpop} K-pop · ${counts.anime} Anime · ${questions.length} au total`
+              : "Billetterie — un ticket doit être émis avant de pouvoir servir"}
           </p>
         </div>
 
@@ -166,7 +166,33 @@ export default function AdminPage() {
         </div>
       </header>
 
-      <div className="flex flex-wrap items-center gap-3 pb-4">
+      <div className="flex gap-1 self-start rounded-xl border border-row-border bg-row p-1">
+        {(
+          [
+            ["questions", "Questions"],
+            ["tickets", "Tickets"],
+          ] as const
+        ).map(([t, label]) => (
+          <button
+            key={t}
+            type="button"
+            onClick={() => setTab(t)}
+            className={`rounded-lg px-5 py-2 text-[13px] font-semibold transition ${
+              tab === t ? "bg-white text-ink" : "text-muted hover:text-white"
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {tab === "tickets" ? (
+        <div className="mt-5 flex flex-1 flex-col">
+          <TicketManager />
+        </div>
+      ) : (
+        <>
+      <div className="flex flex-wrap items-center gap-3 py-4">
         <input
           type="search"
           value={search}
@@ -260,7 +286,7 @@ export default function AdminPage() {
                     </button>
                     <button
                       type="button"
-                      onClick={() => void remove(q)}
+                      onClick={() => setPendingDelete(q)}
                       className="rounded-lg border border-brand-pink/40 px-3 py-1.5 text-[12px] font-semibold text-brand-pink hover:bg-brand-pink/10"
                     >
                       Supprimer
@@ -272,6 +298,8 @@ export default function AdminPage() {
           </ul>
         </>
       )}
+        </>
+      )}
 
       {editing !== undefined && (
         <QuestionEditor
@@ -279,6 +307,16 @@ export default function AdminPage() {
           suggestedId={suggestedId}
           onSave={save}
           onCancel={() => setEditing(undefined)}
+        />
+      )}
+
+      {pendingDelete && (
+        <ConfirmDialog
+          title={`Supprimer la question ${pendingDelete.id} ?`}
+          message={`« ${pendingDelete.prompt} »`}
+          warning="Cette question ne sera plus jamais tirée. L'action est irréversible."
+          onConfirm={() => void remove(pendingDelete)}
+          onCancel={() => setPendingDelete(null)}
         />
       )}
     </div>

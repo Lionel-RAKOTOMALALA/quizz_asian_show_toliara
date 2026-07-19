@@ -34,17 +34,43 @@ export interface ServedQuestion {
   index: number;
 }
 
+/**
+ * État renvoyé par la vérification du ticket.
+ *
+ * - `needs_category` : ticket valide et jamais joué → écran de catégorie
+ * - `created`        : partie créée à l'instant
+ * - `resumed`        : partie en cours → on reprend là où le joueur s'est arrêté
+ * - `finished`       : épreuve terminée → écran de résultat
+ */
+export type SessionStatus =
+  | 'needs_category'
+  | 'created'
+  | 'resumed'
+  | 'finished';
+
 export interface SessionResponse {
+  status: SessionStatus;
+  /** Absent tant que la catégorie n'a pas été choisie. */
   sessionId: string;
   ticket: string;
   playerName: string | null;
   category: Category;
   secondsGlobal: number;
   total: number;
+  /** `true` si une partie existait déjà pour ce ticket. */
+  resumed: boolean;
+  /** `true` si l'épreuve est déjà terminée : on va droit aux résultats. */
+  finished: boolean;
+  answered: number;
+  score: number;
 }
 
 export interface QuizStartResponse extends SessionResponse {
   questions: ServedQuestion[];
+  /** Temps restant, chrono déjà entamé si la partie reprend. */
+  secondsRemaining: number;
+  /** Questions déjà répondues, à sauter à la reprise. */
+  answeredIds: string[];
 }
 
 export interface AnswerResponse {
@@ -107,10 +133,16 @@ interface ResultRow {
 }
 
 export const api = {
+  /**
+   * Ouvre une partie, ou reprend celle déjà associée au ticket. `category`
+   * est ignorée à la reprise : le choix initial reste définitif.
+   */
   createSession(input: {
     ticket: string;
     playerName?: string;
-    category: Category;
+    /** Omise à la vérification : le serveur répond alors `needs_category`. */
+    category?: Category;
+    deviceId: string;
   }): Promise<SessionResponse> {
     return request<SessionResponse>(`${FUNCTIONS}/session`, {
       method: 'POST',
