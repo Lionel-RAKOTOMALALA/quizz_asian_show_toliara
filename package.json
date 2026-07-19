@@ -1,0 +1,33 @@
+{
+  "name": "quizz",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "//": "NB: ne pas nommer ce script `setup` — c'est une commande interne de pnpm.",
+    "bootstrap": "pnpm shared:build && pnpm db:generate && pnpm db:migrate",
+    "shared:build": "pnpm --filter @quizz/shared build",
+    "shared:watch": "pnpm --filter @quizz/shared dev",
+    "db:generate": "pnpm --filter @quizz/api exec prisma generate",
+    "db:migrate": "pnpm --filter @quizz/api exec prisma migrate deploy",
+    "db:studio": "pnpm --filter @quizz/api exec prisma studio",
+    "dev:api": "pnpm --filter @quizz/api start:dev",
+    "dev:mobile": "pnpm --filter @quizz/mobile start",
+    "dev:display": "pnpm --filter @quizz/display dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
+      "prisma",
+      "sharp",
+      "unrs-resolver",
+      "esbuild"
+    ]
+  }
+}

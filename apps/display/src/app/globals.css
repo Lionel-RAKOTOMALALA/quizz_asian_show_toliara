@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/**
+ * Écran de projection : thème sombre assumé, pas de variante claire.
+ * Palette relevée sur la maquette (édition Toliara).
+ */
+@theme {
+  --color-ink: #1b0e14;
+  --color-ink-deep: #150a10;
+  --color-plum: #2c1621;
+
+  --color-panel: rgba(255, 255, 255, 0.035);
+  --color-panel-border: rgba(255, 255, 255, 0.07);
+  --color-row: rgba(255, 255, 255, 0.03);
+  --color-row-border: rgba(255, 255, 255, 0.06);
+
+  --color-brand-pink: #f0568f;
+  --color-brand-amber: #f2a03f;
+  --color-brand-green: #45d48a;
+
+  --color-muted: #a08b95;
+  --color-muted-dim: #7c6670;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(
+      120% 80% at 50% 0%,
+      #2c1621 0%,
+      #1b0e14 55%,
+      #150a10 100%
+    ),
+    #1b0e14;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Petites capitales espacées, très présentes sur la maquette. */
+.eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a08b95;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}

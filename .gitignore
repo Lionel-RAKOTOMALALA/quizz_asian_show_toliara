@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Builds
+dist/
+build/
+.next/
+out/
+
+# Expo
+.expo/
+.expo-shared/
+*.orig.*
+web-build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Prisma
+apps/api/prisma/migrations/dev.db*

@@ -1,0 +1,1567 @@
+[
+  {
+    "id": "anime-1",
+    "category": "anime",
+    "prompt": "Qui est le père de Monkey D. Luffy ?",
+    "choices": ["Garp", "Dragon", "Roger", "Shanks"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-2",
+    "category": "anime",
+    "prompt": "Quel est le vrai nom de L dans Death Note ?",
+    "choices": ["Lawliet", "Light", "Ryuk", "Near"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-3",
+    "category": "anime",
+    "prompt": "Dans SNK, qui possède le Titan Colossal au début ?",
+    "choices": ["Reiner", "Annie", "Bertolt", "Zeke"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-4",
+    "category": "anime",
+    "prompt": "Quel est le nom du démon principal de Tanjiro ?",
+    "choices": ["Akaza", "Muzan", "Kokushibo", "Doma"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-5",
+    "category": "anime",
+    "prompt": "Quel est le Nen de Gon ?",
+    "choices": ["Manipulation", "Renforcement", "Spécialisation", "Transformation"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-6",
+    "category": "anime",
+    "prompt": "Qui a créé les Homonculus dans Fullmetal Alchemist ?",
+    "choices": ["Hohenheim", "Father", "Bradley", "Mustang"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-7",
+    "category": "anime",
+    "prompt": "Combien de Dragon Balls existe-t-il ?",
+    "choices": ["5", "6", "7", "9"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-8",
+    "category": "anime",
+    "prompt": "Quel est le nom du village de Naruto ?",
+    "choices": ["Suna", "Konoha", "Kiri", "Iwa"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-9",
+    "category": "anime",
+    "prompt": "Qui est le capitaine de la 10e division dans Bleach ?",
+    "choices": ["Hitsugaya", "Byakuya", "Zaraki", "Aizen"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-10",
+    "category": "anime",
+    "prompt": "Qui est le premier utilisateur du One For All montré dans MHA ?",
+    "choices": ["Yoichi", "All Might", "Deku", "Nana"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-11",
+    "category": "anime",
+    "prompt": "Dans Dandadan, quel est le nom de la grand-mère de Momo ?",
+    "choices": ["Seiko", "Ayame", "Hana", "Reiko"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-12",
+    "category": "anime",
+    "prompt": "Qui est surnommé « Le Roi des Fléaux » dans Jujutsu Kaisen ?",
+    "choices": ["Gojo", "Sukuna", "Geto", "Yuta"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-13",
+    "category": "anime",
+    "prompt": "Quel est le nom du grimoire d'Asta ?",
+    "choices": [
+      "Trèfle à 3 feuilles",
+      "Trèfle à 4 feuilles",
+      "Trèfle à 5 feuilles",
+      "Trèfle noir"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-14",
+    "category": "anime",
+    "prompt": "Qui a vaincu Meruem ?",
+    "choices": ["Gon", "Netero", "Killua", "Pitou"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-15",
+    "category": "anime",
+    "prompt": "Quel est le prénom de Levi ?",
+    "choices": ["Levi Ackerman", "Levi Smith", "Levi Jaeger", "Levi Fritz"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-16",
+    "category": "anime",
+    "prompt": "Dans Solo Leveling, quel est le titre de Sung Jin-Woo ?",
+    "choices": ["Chasseur S", "Roi des Ombres", "Monarque Dragon", "Roi Démon"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-17",
+    "category": "anime",
+    "prompt": "Qui est le frère de Portgas D. Ace ?",
+    "choices": ["Sabo", "Luffy", "Les deux", "Aucun"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-18",
+    "category": "anime",
+    "prompt": "Quel est le nom du renard de Naruto ?",
+    "choices": ["Kurama", "Shukaku", "Matatabi", "Gyuki"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-19",
+    "category": "anime",
+    "prompt": "Qui est la femme de Vegeta ?",
+    "choices": ["Chichi", "Bulma", "Videl", "Launch"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-20",
+    "category": "anime",
+    "prompt": "Quel est le vrai nom de Kirua ?",
+    "choices": [
+      "Killua Zoldyck",
+      "Killua Freecss",
+      "Killua Silva",
+      "Killua Hunter"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-21",
+    "category": "anime",
+    "prompt": "Dans Fullmetal Alchemist: Brotherhood, quel est le prénom du frère d'Edward Elric ?",
+    "choices": ["Alphonse", "Alex", "Roy", "Ling"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-22",
+    "category": "anime",
+    "prompt": "Dans Code Geass, quel est le nom de famille de Lelouch ?",
+    "choices": ["Britannia", "Lamperouge", "Vi Britannia", "Pendragon"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-23",
+    "category": "anime",
+    "prompt": "Dans Steins;Gate, quel est le pseudonyme de Rintaro Okabe ?",
+    "choices": ["Phoenix", "Hououin Kyouma", "Einstein", "Future King"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-24",
+    "category": "anime",
+    "prompt": "Dans Re:Zero, qui est la première candidate royale rencontrée par Subaru ?",
+    "choices": ["Crusch", "Priscilla", "Anastasia", "Emilia"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-25",
+    "category": "anime",
+    "prompt": "Dans Overlord, quel est le véritable nom d'Ainz avant son transport ?",
+    "choices": ["Satoru Suzuki", "Kazuma Satou", "Momon", "Touch Me"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-26",
+    "category": "anime",
+    "prompt": "Dans No Game No Life, comment s'appelle la sœur de Sora ?",
+    "choices": ["Izuna", "Stephanie", "Shiro", "Jibril"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-27",
+    "category": "anime",
+    "prompt": "Dans Mob Psycho 100, quel pourcentage déclenche généralement l'explosion émotionnelle de Mob ?",
+    "choices": ["50 %", "75 %", "99 %", "100 %"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-28",
+    "category": "anime",
+    "prompt": "Dans Vinland Saga, qui tue Thors ?",
+    "choices": ["Bjorn", "Canute", "Askeladd", "Floki"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-29",
+    "category": "anime",
+    "prompt": "Dans The Rising of the Shield Hero, quelle arme légendaire possède Naofumi ?",
+    "choices": ["Lance", "Épée", "Arc", "Bouclier"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-30",
+    "category": "anime",
+    "prompt": "Dans Dr. Stone, quel est le nom de famille de Senku ?",
+    "choices": ["Ishigami", "Asagiri", "Nanami", "Shishio"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-31",
+    "category": "anime",
+    "prompt": "Dans JoJo's Bizarre Adventure Part 3, quel est le Stand de Dio ?",
+    "choices": ["Crazy Diamond", "Star Platinum", "The World", "King Crimson"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-32",
+    "category": "anime",
+    "prompt": "Dans Fire Force, quel est le nom de famille de Shinra ?",
+    "choices": ["Kusakabe", "Benimaru", "Obi", "Boyle"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-33",
+    "category": "anime",
+    "prompt": "Dans Chainsaw Man, quel démon habite Denji ?",
+    "choices": ["Gun Devil", "Fox Devil", "Pochita", "Bat Devil"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-34",
+    "category": "anime",
+    "prompt": "Dans Tokyo Ghoul, quel est le surnom de Ken Kaneki après Aogiri ?",
+    "choices": ["Le Hibou", "Le Faucheur Noir", "Le Cache-œil", "Le Roi Borgne"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-35",
+    "category": "anime",
+    "prompt": "Dans Blue Exorcist, qui est le père de Rin Okumura ?",
+    "choices": ["Mephisto", "Satan", "Lucifer", "Shiro"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-36",
+    "category": "anime",
+    "prompt": "Dans Mushoku Tensei, quel est le nom du protagoniste réincarné ?",
+    "choices": ["Rudeus Greyrat", "Paul Greyrat", "Sylphiette", "Ruijerd"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-37",
+    "category": "anime",
+    "prompt": "Dans The Eminence in Shadow, quel est le nom civil de Shadow ?",
+    "choices": ["Cid Kagenou", "Alexia Midgar", "Iris Midgar", "Alpha"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-38",
+    "category": "anime",
+    "prompt": "Dans Kaiju No. 8, quel est le prénom du héros ?",
+    "choices": ["Reno", "Kafka", "Soshiro", "Gen"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-39",
+    "category": "anime",
+    "prompt": "Dans Bungo Stray Dogs, quel personnage possède le pouvoir « No Longer Human » ?",
+    "choices": ["Atsushi", "Dazai", "Akutagawa", "Fyodor"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-40",
+    "category": "anime",
+    "prompt": "Dans Psycho-Pass, quel système gouverne la société ?",
+    "choices": ["Gaia", "Sybil", "Oracle", "Nexus"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-41",
+    "category": "anime",
+    "prompt": "Dans Black Butler, quel est le nom du démon majordome ?",
+    "choices": ["Grell", "Sebastian", "Undertaker", "Claude"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-42",
+    "category": "anime",
+    "prompt": "Dans Akame ga Kill!, quel est le nom du groupe d'assassins principal ?",
+    "choices": ["Jaegers", "Wild Hunt", "Night Raid", "Revolution"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-43",
+    "category": "anime",
+    "prompt": "Dans Noragami, quel est le nom du dieu principal ?",
+    "choices": ["Ebisu", "Bishamon", "Yato", "Kazuma"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-44",
+    "category": "anime",
+    "prompt": "Dans Parasyte, quel est le nom du parasite de Shinichi ?",
+    "choices": ["Migi", "Hidari", "Kiseiju", "Goto"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-45",
+    "category": "anime",
+    "prompt": "Dans Classroom of the Elite, dans quelle classe commence Ayanokoji ?",
+    "choices": ["Classe A", "Classe B", "Classe C", "Classe D"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-46",
+    "category": "anime",
+    "prompt": "Dans 86 Eighty-Six, qui commande l'escadron Spearhead ?",
+    "choices": ["Lena", "Shin", "Raiden", "Theo"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-47",
+    "category": "anime",
+    "prompt": "Dans Fate/Stay Night, quel Servant utilise Emiya Shirou ?",
+    "choices": ["Saber", "Archer", "Lancer", "Rider"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-48",
+    "category": "anime",
+    "prompt": "Dans Made in Abyss, comment s'appelle le robot accompagné de Riko ?",
+    "choices": ["Bondrewd", "Reg", "Nanachi", "Mitty"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-49",
+    "category": "anime",
+    "prompt": "Dans Call of the Night, quel est le prénom de la vampire principale ?",
+    "choices": ["Seri", "Hatsuka", "Nazuna", "Kabura"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-50",
+    "category": "anime",
+    "prompt": "Dans Parry Everything, quel est le prénom du héros ?",
+    "choices": ["Lloyd", "Noor", "Allen", "Kurt"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-51",
+    "category": "anime",
+    "prompt": "Dans Bleach, quel est le nom du Zanpakutō de Rukia ?",
+    "choices": [
+      "Sode no Shirayuki",
+      "Hyorinmaru",
+      "Suzumebachi",
+      "Senbonzakura"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-52",
+    "category": "anime",
+    "prompt": "Dans Naruto, qui est le premier jinchūriki de Kyûbi connu ?",
+    "choices": [
+      "Naruto Uzumaki",
+      "Kushina Uzumaki",
+      "Mito Uzumaki",
+      "Minato Namikaze"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-53",
+    "category": "anime",
+    "prompt": "Dans One Piece, quel est le vrai nom de Barbe Noire ?",
+    "choices": [
+      "Marshall D. Teach",
+      "Rocks D. Xebec",
+      "Edward Newgate",
+      "Gol D. Roger"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-54",
+    "category": "anime",
+    "prompt": "Dans Hunter x Hunter, de quel groupe fait partie Kurapika au début de l'histoire ?",
+    "choices": [
+      "Brigade Fantôme",
+      "Hunter Association",
+      "Mafia Nostrade",
+      "Clan Kurta"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-55",
+    "category": "anime",
+    "prompt": "Dans Jujutsu Kaisen, quel est le nom du domaine de Gojo ?",
+    "choices": [
+      "Malevolent Shrine",
+      "Unlimited Void",
+      "Self-Embodiment of Perfection",
+      "Chimera Shadow Garden"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-56",
+    "category": "anime",
+    "prompt": "Dans Demon Slayer, quel Hashira utilise la respiration du Serpent ?",
+    "choices": ["Sanemi", "Muichiro", "Obanai", "Tengen"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-57",
+    "category": "anime",
+    "prompt": "Dans Dragon Ball Z, qui est le premier adversaire majeur vaincu par Goku en Super Saiyan ?",
+    "choices": ["Cell", "Freezer", "Buu", "Vegeta"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-58",
+    "category": "anime",
+    "prompt": "Dans Solo Leveling, quel est le nom du plus fidèle soldat de Jin-Woo ?",
+    "choices": ["Beru", "Igris", "Tank", "Iron"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-59",
+    "category": "anime",
+    "prompt": "Dans Blue Lock, quel joueur est surnommé le Roi ?",
+    "choices": ["Nagi", "Rin", "Barou", "Bachira"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-60",
+    "category": "anime",
+    "prompt": "Dans Death Note, quel est le nom du shinigami de Misa ?",
+    "choices": ["Ryuk", "Sidoh", "Armonia", "Rem"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-61",
+    "category": "anime",
+    "prompt": "Dans Attack on Titan, quel est le nom de jeune fille de la reine Historia ?",
+    "choices": ["Reiss", "Fritz", "Braun", "Ackerman"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-62",
+    "category": "anime",
+    "prompt": "Dans Black Clover, quel est l'attribut magique de Noelle ?",
+    "choices": ["Vent", "Eau", "Feu", "Foudre"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-63",
+    "category": "anime",
+    "prompt": "Dans Tokyo Revengers, quel est le nom de famille de Mikey ?",
+    "choices": ["Hanma", "Sano", "Ryuguji", "Baji"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-64",
+    "category": "anime",
+    "prompt": "Dans Fairy Tail, qui est le maître de Fairy Tail au début de l'histoire ?",
+    "choices": ["Gildarts", "Makarov", "Laxus", "Jura"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-65",
+    "category": "anime",
+    "prompt": "Dans Code Geass, quel pouvoir possède Lelouch ?",
+    "choices": [
+      "Geass de l'illusion",
+      "Geass du temps",
+      "Geass de l'obéissance absolue",
+      "Geass de téléportation"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-66",
+    "category": "anime",
+    "prompt": "Dans Chainsaw Man, quelle chasseuse est obsédée par Denji ?",
+    "choices": ["Makima", "Himeno", "Power", "Kobeni"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-67",
+    "category": "anime",
+    "prompt": "Dans Haikyuu!!, quel est le numéro de maillot de Hinata ?",
+    "choices": ["1", "5", "10", "21"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-68",
+    "category": "anime",
+    "prompt": "Dans Dr. Stone, quel est le prénom du meilleur ami de Senku ?",
+    "choices": ["Chrome", "Gen", "Taiju", "Ryusui"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-69",
+    "category": "anime",
+    "prompt": "Dans Fire Force, quel capitaine est surnommé le Roi de la Destruction ?",
+    "choices": ["Obi", "Burns", "Benimaru", "Joker"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-70",
+    "category": "anime",
+    "prompt": "Dans Mushoku Tensei, quel est le nom du père de Rudeus ?",
+    "choices": ["Philip", "Sauros", "Paul", "Perugius"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-71",
+    "category": "anime",
+    "prompt": "Dans One Piece, quel est le premier membre à rejoindre officiellement Luffy ?",
+    "choices": ["Nami", "Usopp", "Zoro", "Sanji"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-72",
+    "category": "anime",
+    "prompt": "Dans Naruto Shippuden, qui est connu comme le Dieu Shinobi ?",
+    "choices": ["Madara", "Tobirama", "Hashirama", "Hiruzen"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-73",
+    "category": "anime",
+    "prompt": "Dans Bleach, qui est le capitaine de la 6e division ?",
+    "choices": ["Renji", "Byakuya", "Kenpachi", "Shunsui"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-74",
+    "category": "anime",
+    "prompt": "Dans Hunter x Hunter, quel est le nom du roi des Fourmis-Chimères ?",
+    "choices": ["Pitou", "Youpi", "Pouf", "Meruem"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-75",
+    "category": "anime",
+    "prompt": "Dans Jujutsu Kaisen, quel est le nom de famille de Megumi ?",
+    "choices": ["Zenin", "Fushiguro", "Kugisaki", "Itadori"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-76",
+    "category": "anime",
+    "prompt": "Dans Dandadan, quel yokai donne ses pouvoirs à Okarun ?",
+    "choices": ["Acrobatic Silky", "Evil Eye", "Turbo Granny", "Nessie"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-77",
+    "category": "anime",
+    "prompt": "Dans Attack on Titan, qui tue le Titan Colossal à la fin ?",
+    "choices": ["Levi", "Mikasa", "Armin", "Jean"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-78",
+    "category": "anime",
+    "prompt": "Dans My Hero Academia, quel est l'Alter de Bakugo ?",
+    "choices": ["Explosion", "Hellflame", "Engine", "Shock Absorption"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-79",
+    "category": "anime",
+    "prompt": "Dans Blue Lock, quel joueur possède l'arme du « monstre » imaginaire ?",
+    "choices": ["Rin", "Bachira", "Chigiri", "Isagi"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-80",
+    "category": "anime",
+    "prompt": "Dans Demon Slayer, qui est le Hashira de la Flamme ?",
+    "choices": ["Tengen", "Sanemi", "Rengoku", "Giyu"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-81",
+    "category": "anime",
+    "prompt": "Dans Death Note, qui succède finalement à L ?",
+    "choices": ["Mello", "Near", "Matsuda", "Aizawa"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-82",
+    "category": "anime",
+    "prompt": "Dans Solo Leveling, quel rang possédait Jin-Woo avant son éveil ?",
+    "choices": ["D", "E", "C", "B"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-83",
+    "category": "anime",
+    "prompt": "Dans Black Clover, qui est l'Empereur-Mage au début ?",
+    "choices": ["Julius Novachrono", "Fuegoleon", "Nozel", "Yami"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-84",
+    "category": "anime",
+    "prompt": "Dans One Punch Man, quel héros est classé rang 1 de la classe S ?",
+    "choices": ["Blast", "Tatsumaki", "King", "Bang"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-85",
+    "category": "anime",
+    "prompt": "Dans Tokyo Ghoul, quel est le nom du café où travaille Kaneki ?",
+    "choices": ["V14", "Anteiku", "Cochlea", "Aogiri"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-86",
+    "category": "anime",
+    "prompt": "Dans Classroom of the Elite, quel est le prénom d'Ayanokoji ?",
+    "choices": ["Kiyotaka", "Kakeru", "Manabu", "Rokusuke"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-87",
+    "category": "anime",
+    "prompt": "Dans Re:Zero, quel est le nom de famille de Subaru ?",
+    "choices": ["Natsuki", "Emilia", "Roswaal", "Mathers"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-88",
+    "category": "anime",
+    "prompt": "Dans Vinland Saga, qui est le père de Thorfinn ?",
+    "choices": ["Bjorn", "Askeladd", "Thors", "Canute"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-89",
+    "category": "anime",
+    "prompt": "Dans Kaiju No. 8, quel numéro porte Kafka après sa transformation ?",
+    "choices": ["6", "7", "8", "9"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-90",
+    "category": "anime",
+    "prompt": "Dans The Eminence in Shadow, quel est le nom de l'organisation de Shadow ?",
+    "choices": ["Diabolos", "Shadow Garden", "Cult Zero", "Black Rose"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-91",
+    "category": "anime",
+    "prompt": "Dans Bleach, qui devient Commandant Général après Yamamoto ?",
+    "choices": ["Byakuya", "Toshiro", "Shunsui", "Aizen"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-92",
+    "category": "anime",
+    "prompt": "Dans Naruto, qui a inventé le Rasengan ?",
+    "choices": ["Jiraiya", "Minato", "Kakashi", "Tobirama"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-93",
+    "category": "anime",
+    "prompt": "Dans One Piece, quel est le nom du fruit de Law ?",
+    "choices": [
+      "Ope Ope no Mi",
+      "Gura Gura no Mi",
+      "Yami Yami no Mi",
+      "Jiki Jiki no Mi"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-94",
+    "category": "anime",
+    "prompt": "Dans Hunter x Hunter, quel est le prénom du président Netero ?",
+    "choices": ["Isaac", "Silva", "Beyond", "Zeno"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-95",
+    "category": "anime",
+    "prompt": "Dans Demon Slayer, quel est le nom de famille de Zenitsu ?",
+    "choices": ["Kamado", "Agatsuma", "Hashibira", "Shinazugawa"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-96",
+    "category": "anime",
+    "prompt": "Dans Jujutsu Kaisen, quel est le nom du professeur principal de Yuji ?",
+    "choices": ["Nanami", "Kusakabe", "Gojo", "Utahime"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-97",
+    "category": "anime",
+    "prompt": "Dans Blue Lock, quel est le prénom d'Isagi ?",
+    "choices": ["Yoichi", "Seishiro", "Rin", "Hyoma"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-98",
+    "category": "anime",
+    "prompt": "Dans SNK, qui est le dernier commandant du Bataillon d'Exploration ?",
+    "choices": ["Levi", "Jean", "Hange", "Erwin"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-99",
+    "category": "anime",
+    "prompt": "Dans Solo Leveling, quel monarque affronte principalement Jin-Woo dans la bataille finale ?",
+    "choices": [
+      "Monarque des Bêtes",
+      "Monarque des Glaces",
+      "Antares",
+      "Baran"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-100",
+    "category": "anime",
+    "prompt": "Dans One Piece, quel est le véritable nom du Gouvernement Mondial dirigeant dans l'ombre ?",
+    "choices": ["Gorosei", "Imu", "Kong", "Garling"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-101",
+    "category": "anime",
+    "prompt": "Dans Frieren, comment s'appelle l'apprentie de Frieren ?",
+    "choices": ["Serie", "Aura", "Fern", "Flamme"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-102",
+    "category": "anime",
+    "prompt": "Dans Wistoria: Wand and Sword, quelle est la faiblesse principale de Will ?",
+    "choices": [
+      "Il est maudit",
+      "Il ne peut pas utiliser la magie",
+      "Il est aveugle",
+      "Il est malade"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-103",
+    "category": "anime",
+    "prompt": "Dans The Ancient Magus' Bride, qui achète Chise au début de l'histoire ?",
+    "choices": ["Joseph", "Cartaphilus", "Elias", "Lindel"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-104",
+    "category": "anime",
+    "prompt": "Dans Wandering Witch: The Journey of Elaina, quel est le surnom d'Elaina ?",
+    "choices": [
+      "Sorcière du Vent",
+      "Sorcière Dorée",
+      "Sorcière Cendrée",
+      "Sorcière des Étoiles"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-105",
+    "category": "anime",
+    "prompt": "Dans Little Witch Academia, quelle sorcière Akko admire-t-elle ?",
+    "choices": ["Croix", "Ursula", "Chariot", "Diana"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-106",
+    "category": "anime",
+    "prompt": "Dans Frieren, à quelle race appartient Frieren ?",
+    "choices": ["Humaine", "Elfe", "Démon", "Naine"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-107",
+    "category": "anime",
+    "prompt": "Dans The Ancient Magus' Bride, quel est le nom du chien familier de Chise ?",
+    "choices": ["Ruth", "Renfred", "Ashen", "Seth"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-108",
+    "category": "anime",
+    "prompt": "Dans Wistoria, quelle arme utilise principalement Will ?",
+    "choices": ["Lance", "Arc", "Hache", "Épée"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-109",
+    "category": "anime",
+    "prompt": "Dans Little Witch Academia, dans quelle académie étudie Akko ?",
+    "choices": ["Avalon", "Albion", "Luna Nova", "Mahora"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-110",
+    "category": "anime",
+    "prompt": "Dans Elaina, quel est le principal thème de l'anime ?",
+    "choices": ["Guerre", "Voyage", "Tournoi", "Politique"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-111",
+    "category": "anime",
+    "prompt": "Dans Frieren, quel héros a vaincu le Roi Démon avec Frieren ?",
+    "choices": ["Eisen", "Stark", "Himmel", "Heiter"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-112",
+    "category": "anime",
+    "prompt": "Dans The Ancient Magus' Bride, quelle est la particularité d'Elias ?",
+    "choices": [
+      "C'est un démon",
+      "C'est un vampire",
+      "C'est un dragon",
+      "C'est un être magique à tête animale"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-113",
+    "category": "anime",
+    "prompt": "Dans Little Witch Academia, qui est la principale rivale d'Akko ?",
+    "choices": ["Amanda", "Diana", "Sucy", "Lotte"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-114",
+    "category": "anime",
+    "prompt": "Dans Wistoria, quel est le rêve de Will ?",
+    "choices": [
+      "Devenir roi",
+      "Voyager",
+      "Rejoindre son amie au sommet de la tour",
+      "Devenir professeur"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-115",
+    "category": "anime",
+    "prompt": "Dans Frieren, lequel de ces personnages est un prêtre ?",
+    "choices": ["Stark", "Himmel", "Eisen", "Heiter"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-116",
+    "category": "anime",
+    "prompt": "Dans Elaina, qui fut le mentor d'Elaina ?",
+    "choices": ["Fran", "Sheila", "Saya", "Estelle"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-117",
+    "category": "anime",
+    "prompt": "Comment s'appelle l'héroïne de The Ancient Magus' Bride ?",
+    "choices": ["Stella", "Alice", "Chise", "Ruth"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-118",
+    "category": "anime",
+    "prompt": "Dans Little Witch Academia, quelle est la spécialité de Sucy ?",
+    "choices": ["Potions", "Combat", "Cuisine", "Dragons"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-119",
+    "category": "anime",
+    "prompt": "Dans Wistoria, quel est le nom complet du héros ?",
+    "choices": ["Julius Reinberg", "Will Serfort", "Sion Ulster", "Wignall"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-120",
+    "category": "anime",
+    "prompt": "Quel est le métier principal d'Elaina ?",
+    "choices": ["Alchimiste", "Chevalière", "Sorcière voyageuse", "Prêtresse"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-121",
+    "category": "anime",
+    "prompt": "Dans Frieren, quel est le métier principal de Frieren ?",
+    "choices": ["Guerrière", "Mage", "Archère", "Prêtresse"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-122",
+    "category": "anime",
+    "prompt": "Dans The Ancient Magus' Bride, quel est le rêve principal de Chise ?",
+    "choices": [
+      "Voyager",
+      "Trouver une famille et une place dans le monde",
+      "Devenir reine",
+      "Tuer les dragons"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-123",
+    "category": "anime",
+    "prompt": "Dans Little Witch Academia, comment s'appelle l'héroïne ?",
+    "choices": ["Diana", "Amanda", "Akko", "Sucy"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-124",
+    "category": "anime",
+    "prompt": "Dans Elaina, quelle couleur domine généralement sa tenue ?",
+    "choices": ["Rouge", "Verte", "Noire", "Blanche"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-125",
+    "category": "anime",
+    "prompt": "Dans Wistoria, quel est le genre principal de l'œuvre ?",
+    "choices": ["Horreur", "Science-fiction", "Fantasy scolaire", "Sport"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-126",
+    "category": "anime",
+    "prompt": "Dans Delicious in Dungeon, quel est l'objectif principal de Laios au début de l'histoire ?",
+    "choices": [
+      "Devenir roi",
+      "Retrouver sa sœur",
+      "Tuer un dieu",
+      "Trouver un trésor"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-127",
+    "category": "anime",
+    "prompt": "Dans Delicious in Dungeon, quelle race est Marcille ?",
+    "choices": ["Humaine", "Naine", "Elfe", "Halfelin"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-128",
+    "category": "anime",
+    "prompt": "Dans Secrets of the Silent Witch, quel est le nom de la protagoniste ?",
+    "choices": [
+      "Monica Everett",
+      "Rosalie",
+      "Isabelle Norton",
+      "Lana Colette"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-129",
+    "category": "anime",
+    "prompt": "Dans Delicious in Dungeon, quel membre du groupe est spécialisé dans l'ouverture des serrures et la détection des pièges ?",
+    "choices": ["Senshi", "Chilchuck", "Laios", "Marcille"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-130",
+    "category": "anime",
+    "prompt": "Dans Secrets of the Silent Witch, pourquoi Monica est-elle célèbre ?",
+    "choices": [
+      "Elle maîtrise la magie du temps",
+      "Elle est la seule mage à utiliser la magie sans incantation",
+      "Elle a vaincu le Roi Démon",
+      "Elle est princesse"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-131",
+    "category": "anime",
+    "prompt": "Dans Delicious in Dungeon, quel nain rejoint le groupe pour cuisiner les monstres ?",
+    "choices": ["Namari", "Tansu", "Senshi", "Kiki"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-132",
+    "category": "anime",
+    "prompt": "Dans Secrets of the Silent Witch, quel est le principal défaut de Monica ?",
+    "choices": [
+      "Elle est arrogante",
+      "Elle est paresseuse",
+      "Elle souffre d'une timidité extrême",
+      "Elle est agressive"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-133",
+    "category": "anime",
+    "prompt": "Dans Delicious in Dungeon, quel monstre a avalé Falin au début de l'histoire ?",
+    "choices": ["Dragon Rouge", "Basilic", "Kraken", "Chimère"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-134",
+    "category": "anime",
+    "prompt": "Dans Secrets of the Silent Witch, quelle mission Monica reçoit-elle ?",
+    "choices": [
+      "Protéger secrètement un prince",
+      "Détruire un royaume",
+      "Trouver un artefact légendaire",
+      "Tuer un dragon"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-135",
+    "category": "anime",
+    "prompt": "Dans Delicious in Dungeon, quelle est la profession principale de Marcille ?",
+    "choices": ["Guérisseuse", "Mage", "Voleuse", "Chevalière"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-136",
+    "category": "anime",
+    "prompt": "Dans My Happy Marriage, quel est le nom de famille de Miyo ?",
+    "choices": ["Kudou", "Saimori", "Tatsuishi", "Usuba"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-137",
+    "category": "anime",
+    "prompt": "Dans Yona of the Dawn, quel est le nom du garde du corps de Yona ?",
+    "choices": ["Jae-Ha", "Kija", "Hak", "Shin-Ah"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-138",
+    "category": "anime",
+    "prompt": "Dans Snow White with the Red Hair, de quelle couleur sont les cheveux de Shirayuki ?",
+    "choices": ["Noirs", "Rouges", "Blonds", "Argentés"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-139",
+    "category": "anime",
+    "prompt": "Dans Fruits Basket, quel membre de la famille Soma est possédé par l'esprit du Chat ?",
+    "choices": ["Yuki", "Shigure", "Kyo", "Hatsuharu"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-140",
+    "category": "anime",
+    "prompt": "Dans Spice and Wolf, quel est le prénom de la louve sage ?",
+    "choices": ["Holo", "Nora", "Eve", "Diana"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-141",
+    "category": "anime",
+    "prompt": "Dans Kimi ni Todoke, quel est le prénom de l'héroïne ?",
+    "choices": ["Ayane", "Chizuru", "Sawako", "Ume"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-142",
+    "category": "anime",
+    "prompt": "Dans The Saint's Magic Power Is Omnipotent, quel est le prénom de la Sainte invoquée ?",
+    "choices": ["Sei", "Aira", "Liz", "Yuri"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-143",
+    "category": "anime",
+    "prompt": "Dans Ouran High School Host Club, quel est le prénom de Fujioka ?",
+    "choices": ["Hikaru", "Haruhi", "Kaoru", "Renge"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-144",
+    "category": "anime",
+    "prompt": "Dans The Ancient Magus' Bride, quel est le prénom d'Elias ?",
+    "choices": [
+      "Elias Ainsworth",
+      "Elias Blackwood",
+      "Elias Grimm",
+      "Elias Thorn"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-145",
+    "category": "anime",
+    "prompt": "Dans Maid Sama!, quel est le nom de famille de Misaki ?",
+    "choices": ["Ayuzawa", "Suzumiya", "Tachibana", "Fujioka"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-146",
+    "category": "anime",
+    "prompt": "Dans Yona of the Dawn, combien de dragons légendaires Yona doit-elle retrouver ?",
+    "choices": ["3", "4", "5", "6"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-147",
+    "category": "anime",
+    "prompt": "Dans Fruits Basket, quel animal du zodiaque représente Yuki Soma ?",
+    "choices": ["Rat", "Chien", "Tigre", "Dragon"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-148",
+    "category": "anime",
+    "prompt": "Dans Spice and Wolf, quelle est la profession de Lawrence ?",
+    "choices": ["Forgeron", "Marchand", "Soldat", "Noble"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-149",
+    "category": "anime",
+    "prompt": "Dans My Happy Marriage, quel est le prénom du fiancé de Miyo ?",
+    "choices": ["Arata", "Kiyoka", "Yoshito", "Kazushi"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-150",
+    "category": "anime",
+    "prompt": "Dans Kamisama Kiss, quel est le nom du familier renard de Nanami ?",
+    "choices": ["Akura", "Mizuki", "Tomoe", "Kurama"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-151",
+    "category": "anime",
+    "prompt": "Dans Snow White with the Red Hair, quel est le statut de Zen ?",
+    "choices": ["Roi", "Prince", "Général", "Duc"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-152",
+    "category": "anime",
+    "prompt": "Dans Ouran High School Host Club, quel club Haruhi rejoint-elle ?",
+    "choices": [
+      "Club de littérature",
+      "Club de musique",
+      "Host Club",
+      "Conseil étudiant"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-153",
+    "category": "anime",
+    "prompt": "Dans The Saint's Magic Power Is Omnipotent, quelle profession exerce Sei après son arrivée ?",
+    "choices": ["Alchimiste", "Chevalière", "Reine", "Prêtresse"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-154",
+    "category": "anime",
+    "prompt": "Dans Fruits Basket, qui est le chef de la famille Soma ?",
+    "choices": ["Shigure", "Akito", "Hatori", "Ayame"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-155",
+    "category": "anime",
+    "prompt": "Dans Kimi ni Todoke, quel est le nom de famille de Shota Kazehaya ?",
+    "choices": ["Kazehaya", "Sanada", "Miura", "Kuronuma"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-156",
+    "category": "anime",
+    "prompt": "Dans Kamisama Kiss, comment Nanami devient-elle divinité locale ?",
+    "choices": [
+      "Elle gagne un tournoi",
+      "Elle hérite d'un sanctuaire",
+      "Elle est choisie par le roi démon",
+      "Elle est invoquée"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-157",
+    "category": "anime",
+    "prompt": "Dans My Happy Marriage, quelle est la situation de Miyo dans sa famille au début ?",
+    "choices": ["Princesse", "Adoptée", "Maltraitée", "Chef de famille"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-158",
+    "category": "anime",
+    "prompt": "Dans Yona of the Dawn, qui tue le roi Il ?",
+    "choices": ["Hak", "Soo-Won", "Jae-Ha", "Kija"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-159",
+    "category": "anime",
+    "prompt": "Dans Spice and Wolf, Holo est associée à quel animal ?",
+    "choices": ["Renard", "Loup", "Cerf", "Corbeau"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-160",
+    "category": "anime",
+    "prompt": "Dans Maid Sama!, quel secret Misaki cache-t-elle ?",
+    "choices": [
+      "Elle est noble",
+      "Elle est idol",
+      "Elle travaille dans un maid café",
+      "Elle est magicienne"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-161",
+    "category": "anime",
+    "prompt": "Dans The Ancient Magus' Bride, quel est le prénom de l'héroïne ?",
+    "choices": ["Chise", "Stella", "Alice", "Ruth"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-162",
+    "category": "anime",
+    "prompt": "Dans Ouran High School Host Club, qui est le président du Host Club ?",
+    "choices": ["Kyoya", "Hikaru", "Tamaki", "Mori"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-163",
+    "category": "anime",
+    "prompt": "Dans Kimi ni Todoke, quel surnom les élèves donnent-ils à Sawako ?",
+    "choices": ["Reine des Glaces", "Sadako", "Sorcière", "Fantôme"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-164",
+    "category": "anime",
+    "prompt": "Dans Snow White with the Red Hair, quelle profession exerce Shirayuki ?",
+    "choices": ["Mage", "Herboriste", "Alchimiste", "Prêtresse"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-165",
+    "category": "anime",
+    "prompt": "Dans Yona of the Dawn, quel dragon possède des yeux bleus capables de voir loin ?",
+    "choices": ["Kija", "Jae-Ha", "Shin-Ah", "Zeno"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-166",
+    "category": "anime",
+    "prompt": "Dans Spice and Wolf, quel est le titre souvent donné à Holo ?",
+    "choices": [
+      "Louve Sage de Yoitsu",
+      "Reine des Loups",
+      "Déesse de l'Hiver",
+      "Gardienne du Nord"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-167",
+    "category": "anime",
+    "prompt": "Dans My Happy Marriage, à quelle famille appartient Kiyoka ?",
+    "choices": ["Usuba", "Kudou", "Saimori", "Tatsuishi"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-168",
+    "category": "anime",
+    "prompt": "Dans Kamisama Kiss, quelle créature est Tomoe ?",
+    "choices": ["Dragon", "Démon corbeau", "Yokai renard", "Esprit loup"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-169",
+    "category": "anime",
+    "prompt": "Dans Fruits Basket, quel personnage est médecin ?",
+    "choices": ["Hatori", "Ayame", "Kyo", "Momiji"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-170",
+    "category": "anime",
+    "prompt": "Dans The Saint's Magic Power Is Omnipotent, quel chevalier tombe amoureux de Sei ?",
+    "choices": ["Jude", "Kyle", "Albert Hawke", "Johan"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-171",
+    "category": "anime",
+    "prompt": "Dans One Piece, quel est le nom de l'épée portée par Kozuki Oden et héritée par Zoro ?",
+    "choices": ["Ame no Habakiri", "Nidai Kitetsu", "Enma", "Shusui"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-172",
+    "category": "anime",
+    "prompt": "Dans Hunter x Hunter, quel est le nom de la technique de Kurapika qui immobilise sa cible ?",
+    "choices": ["Holy Chain", "Judgment Chain", "Chain Jail", "Dowsing Chain"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-173",
+    "category": "anime",
+    "prompt": "Dans Bleach, quel était le rang d'Aizen avant de devenir capitaine ?",
+    "choices": [
+      "3e siège",
+      "Lieutenant",
+      "5e siège",
+      "Capitaine remplaçant"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-174",
+    "category": "anime",
+    "prompt": "Dans Naruto, quel membre de l'Akatsuki était le partenaire de Kakuzu avant Hidan ?",
+    "choices": ["Sasori", "Orochimaru", "Inconnu", "Deidara"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-175",
+    "category": "anime",
+    "prompt": "Dans Demon Slayer, quel démon a transformé Rui en démon ?",
+    "choices": ["Kokushibo", "Doma", "Muzan", "Hantengu"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-176",
+    "category": "anime",
+    "prompt": "Dans Jujutsu Kaisen, quel est le nom du lycée fréquenté par Todo ?",
+    "choices": [
+      "Kyoto Jujutsu High",
+      "Tokyo Jujutsu High",
+      "Sendai Jujutsu High",
+      "Osaka Jujutsu High"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-177",
+    "category": "anime",
+    "prompt": "Dans Frieren, quel était le titre de Flamme ?",
+    "choices": [
+      "Grande Sorcière de l'Est",
+      "Mage Héroïque",
+      "Grande Mage de l'Humanité",
+      "Sage de l'Empire"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-178",
+    "category": "anime",
+    "prompt": "Dans Blue Lock, quel est le prénom de Nagi ?",
+    "choices": ["Reo", "Seishiro", "Shoei", "Yo"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-179",
+    "category": "anime",
+    "prompt": "Dans Solo Leveling, quel est le nom de la guilde dirigée par Choi Jong-In ?",
+    "choices": ["White Tiger", "Ahjin", "Hunters", "Fiend"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-180",
+    "category": "anime",
+    "prompt": "Dans Attack on Titan, qui était le commandant du Bataillon d'Exploration avant Erwin ?",
+    "choices": [
+      "Keith Shadis",
+      "Theo Magath",
+      "Nile Dok",
+      "Darius Zackly"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-181",
+    "category": "anime",
+    "prompt": "Dans Black Clover, quel est le nom du démon lié à Asta ?",
+    "choices": ["Zagred", "Lucifero", "Liebe", "Adrammelech"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-182",
+    "category": "anime",
+    "prompt": "Dans The Eminence in Shadow, quel numéro porte Beta parmi les Sept Ombres ?",
+    "choices": ["2", "3", "4", "5"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-183",
+    "category": "anime",
+    "prompt": "Dans Mushoku Tensei, quel est le nom du continent natal de Roxy ?",
+    "choices": ["Central", "Demon Continent", "Millis", "Begaritt"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-184",
+    "category": "anime",
+    "prompt": "Dans Kaiju No. 8, quel est le prénom de Shinomiya ?",
+    "choices": ["Mina", "Kikoru", "Aoi", "Haru"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-185",
+    "category": "anime",
+    "prompt": "Dans Death Note, quel est le nom de la chaîne de télévision utilisée par Kira pour son premier message public ?",
+    "choices": ["NTV", "KTV", "Sakura TV", "Aucune, elle est fictive"],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-186",
+    "category": "anime",
+    "prompt": "Dans Fairy Tail, quel est le prénom du fils de Makarov ?",
+    "choices": ["Ivan", "Luxus", "Yuri", "Mavis"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-187",
+    "category": "anime",
+    "prompt": "Dans Re:Zero, quel est le prénom du père de Subaru ?",
+    "choices": ["Kenichi", "Wilhelm", "Clind", "Rom"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-188",
+    "category": "anime",
+    "prompt": "Dans Dr. Stone, quel matériau Senku utilise-t-il pour fabriquer les premiers fils électriques ?",
+    "choices": ["Fer", "Cuivre", "Argent", "Or"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-189",
+    "category": "anime",
+    "prompt": "Dans Vinland Saga, quel est le prénom du fils de Thorfinn ?",
+    "choices": ["Karli", "Snorri", "Einar", "Leif"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-190",
+    "category": "anime",
+    "prompt": "Dans Spice and Wolf, quelle partie du corps de Holo révèle souvent sa véritable nature ?",
+    "choices": [
+      "Les yeux",
+      "Les oreilles et la queue",
+      "Les mains",
+      "Les crocs uniquement"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-191",
+    "category": "anime",
+    "prompt": "Dans Code Geass, quel est le nom du chevalier personnel de Cornelia ?",
+    "choices": ["Jeremiah", "Guilford", "Bismarck", "Luciano"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-192",
+    "category": "anime",
+    "prompt": "Dans Ouran High School Host Club, quel objet Haruhi casse-t-elle au début de l'histoire ?",
+    "choices": ["Une statue", "Une tasse", "Un vase", "Une montre"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-193",
+    "category": "anime",
+    "prompt": "Dans Kamisama Kiss, quel est le type de créature de Mizuki ?",
+    "choices": ["Renard", "Corbeau", "Serpent", "Dragon"],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-194",
+    "category": "anime",
+    "prompt": "Dans Yona of the Dawn, quel était le poste de Hak avant son exil ?",
+    "choices": [
+      "Général du Vent",
+      "Général du Feu",
+      "Général de l'Eau",
+      "Général de la Terre"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-195",
+    "category": "anime",
+    "prompt": "Dans Wistoria, quel est le nom de l'académie où étudie Will ?",
+    "choices": ["Regarden", "Rigarden", "Wisteria", "Albis"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-196",
+    "category": "anime",
+    "prompt": "Dans Fruits Basket, quel Soma est surnommé « le Lapin » ?",
+    "choices": ["Hiro", "Momiji", "Kagura", "Ritsu"],
+    "correctIndex": 1
+  },
+  {
+    "id": "anime-197",
+    "category": "anime",
+    "prompt": "Dans My Happy Marriage, quel est le nom de la sœur de Miyo ?",
+    "choices": ["Kaya", "Kana", "Ayaka", "Misaki"],
+    "correctIndex": 0
+  },
+  {
+    "id": "anime-198",
+    "category": "anime",
+    "prompt": "Dans Chainsaw Man, quel démon représente Kobeni officiellement ?",
+    "choices": [
+      "Démon du Couteau",
+      "Démon du Secret",
+      "Inconnu",
+      "Démon de la Peur"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "anime-199",
+    "category": "anime",
+    "prompt": "Dans Dandadan, quel est le prénom de Jiji ?",
+    "choices": [
+      "Jin",
+      "Jiji est son vrai prénom",
+      "Jinnosuke",
+      "Jin Enjoji"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "anime-200",
+    "category": "anime",
+    "prompt": "Dans Classroom of the Elite, quel est le numéro de la salle de la classe D au début de l'histoire ?",
+    "choices": ["1-D", "D-101", "D-203", "D-305"],
+    "correctIndex": 2
+  }
+]

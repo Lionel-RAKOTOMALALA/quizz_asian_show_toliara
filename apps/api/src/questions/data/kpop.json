@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "kpop-1",
+    "category": "kpop",
+    "prompt": "Quel est le vrai nom de scène ou prénom civil de Karina (aespa) ?",
+    "choices": [
+      "Yoo Ji-min",
+      "Kim Min-jeong",
+      "Bae Ju-hyun",
+      "Jang Won-young"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-2",
+    "category": "kpop",
+    "prompt": "En quelle année le groupe légendaire EXO a-t-il débuté ?",
+    "choices": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "kpop-3",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté le groupe Stray Kids en octobre 2019 ?",
+    "choices": [
+      "Woojin",
+      "Han",
+      "Felix",
+      "Lee Know"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-4",
+    "category": "kpop",
+    "prompt": "Quel est le titre du tout premier mini-album de BLACKPINK sorti en 2018 ?",
+    "choices": [
+      "Square Up",
+      "Born Pink",
+      "The Album",
+      "Kill This Love"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-5",
+    "category": "kpop",
+    "prompt": "Qui a remporté le prix de l'Artiste de l'Année (Daesang) aux MAMA Awards 2025 ?",
+    "choices": [
+      "BTS",
+      "G-Dragon",
+      "Seventeen",
+      "Stray Kids"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-6",
+    "category": "kpop",
+    "prompt": "Combien de membres compte officiellement le groupe SEVENTEEN à ses débuts ?",
+    "choices": [
+      "17",
+      "13",
+      "10",
+      "15"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-7",
+    "category": "kpop",
+    "prompt": "Quel girlsband de la 5ème génération a débuté chez YG Entertainment en 2024 ?",
+    "choices": [
+      "BABYMONSTER",
+      "ILLIT",
+      "MEOVV",
+      "NewJeans"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-8",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté LE SSERAFIM peu après leurs débuts en 2022 ?",
+    "choices": [
+      "Garam",
+      "Soojin",
+      "Jinni",
+      "Chuu"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-9",
+    "category": "kpop",
+    "prompt": "Quel est le premier album studio (Full Album) de TXT sorti fin 2019 ?",
+    "choices": [
+      "The Dream Chapter: Magic",
+      "Minisode 1",
+      "The Chaos Chapter",
+      "Star"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-10",
+    "category": "kpop",
+    "prompt": "Quelle chanson de Rosé en collaboration avec Bruno Mars a brisé tous les records fin 2024 / 2025 ?",
+    "choices": [
+      "APT.",
+      "Toxic Till The End",
+      "On The Ground",
+      "Gone"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-11",
+    "category": "kpop",
+    "prompt": "Quel est le vrai nom de V du groupe BTS ?",
+    "choices": [
+      "Kim Tae-hyung",
+      "Park Ji-min",
+      "Jeon Jung-kook",
+      "Min Yoon-gi"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-12",
+    "category": "kpop",
+    "prompt": "En quelle année le girlsband iconique Red Velvet a-t-il débuté ?",
+    "choices": [
+      "2012",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-13",
+    "category": "kpop",
+    "prompt": "Quelle membre a quitté le groupe (G)I-DLE en 2021 suite à une controverse ?",
+    "choices": [
+      "Soojin",
+      "Miyeon",
+      "Yuqi",
+      "Shuhua"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-14",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album japonais complet de TWICE sorti en 2018 ?",
+    "choices": [
+      "BDZ",
+      "Twicetagram",
+      "Eyes Wide Open",
+      "Formula of Love"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-15",
+    "category": "kpop",
+    "prompt": "Quel groupe masculin a remporté le Daesang de l'Album de l'Année aux MAMA 2025 avec « KARMA » ?",
+    "choices": [
+      "Stray Kids",
+      "NCT Dream",
+      "Enhypen",
+      "Seventeen"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-16",
+    "category": "kpop",
+    "prompt": "Combien de membres composent le groupe de rookies masculins CORTIS (débuté en 2025) ?",
+    "choices": [
+      "4",
+      "5",
+      "7",
+      "9"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-17",
+    "category": "kpop",
+    "prompt": "Quel boysband de la 5ème génération a été formé par SM Entertainment en 2023 ?",
+    "choices": [
+      "RIIZE",
+      "TWS",
+      "NCT Wish",
+      "ZEROBASEONE"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-18",
+    "category": "kpop",
+    "prompt": "Quelle membre a quitté le groupe NMIXX en décembre 2022 pour des raisons personnelles ?",
+    "choices": [
+      "Jinni",
+      "Lily",
+      "Sullyoon",
+      "Kyujin"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-19",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album complet de NCT 127 sorti en 2018 ?",
+    "choices": [
+      "Regular-Irregular",
+      "Neo Zone",
+      "Sticker",
+      "Awaken"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-20",
+    "category": "kpop",
+    "prompt": "Quel boysband a remporté le prix « Worldwide Fans' Choice of the Year » aux MAMA 2025 ?",
+    "choices": [
+      "Enhypen",
+      "Stray Kids",
+      "BTS",
+      "Ateez"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-21",
+    "category": "kpop",
+    "prompt": "Quel est le vrai nom de la leader de TWICE, Jihyo ?",
+    "choices": [
+      "Park Ji-soo",
+      "Kim Da-hyun",
+      "Hirai Momo",
+      "Chou Tzuyu"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-22",
+    "category": "kpop",
+    "prompt": "En quelle année le boysband Monsta X a-t-il fait ses débuts ?",
+    "choices": [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "kpop-23",
+    "category": "kpop",
+    "prompt": "Quel membre historique a quitté le groupe TVXQ! en 2009 (devenant JYJ avec deux autres) ?",
+    "choices": [
+      "Jaejoong",
+      "Changmin",
+      "Yunho",
+      "Taemin"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-24",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album studio de IVE sorti en 2023 ?",
+    "choices": [
+      "I've IVE",
+      "Eleven",
+      "Love Dive",
+      "Wave"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-25",
+    "category": "kpop",
+    "prompt": "Quel girlsband a remporté le titre de « Best Female Group » aux MAMA Awards 2025 ?",
+    "choices": [
+      "aespa",
+      "IVE",
+      "NewJeans",
+      "LE SSERAFIM"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-26",
+    "category": "kpop",
+    "prompt": "Combien de membres compte actuellement le girlsband de SM Entertainment Hearts2Hearts (débuté en 2025) ?",
+    "choices": [
+      "5",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "kpop-27",
+    "category": "kpop",
+    "prompt": "Quel girlsband phare de la 3ème génération a débuté chez YG Entertainment en 2016 ?",
+    "choices": [
+      "BLACKPINK",
+      "2NE1",
+      "TWICE",
+      "Red Velvet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-28",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté le boysband ONEUS en 2022 ?",
+    "choices": [
+      "Ravn",
+      "Leedo",
+      "Hwanwoong",
+      "Xion"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-29",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album studio de Stray Kids sorti en 2020 ?",
+    "choices": [
+      "Go Live",
+      "In Life",
+      "Noeasy",
+      "5-Star"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-30",
+    "category": "kpop",
+    "prompt": "Quel groupe masculin a été sacré « Best Male Group » aux MAMA Awards 2025 ?",
+    "choices": [
+      "ZEROBASEONE",
+      "Stray Kids",
+      "BOYNEXTDOOR",
+      "TWS"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "kpop-31",
+    "category": "kpop",
+    "prompt": "Quel est le vrai nom de la rappeuse solo et membre de BLACKPINK, Jennie ?",
+    "choices": [
+      "Kim Jennie",
+      "Jennie Ruby Jane",
+      "Kim Ji-soo",
+      "Lalisa Manobal"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-32",
+    "category": "kpop",
+    "prompt": "En quelle année le boysband de Big Hit Entertainment, TXT, a-t-il débuté ?",
+    "choices": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-33",
+    "category": "kpop",
+    "prompt": "Quelle membre a officiellement quitté le girlsband Weeekly en 2022 ?",
+    "choices": [
+      "Jiyoon",
+      "Jihan",
+      "Soeun",
+      "Zoa"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-34",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album studio en coréen de aespa sorti en 2024 ?",
+    "choices": [
+      "Armageddon",
+      "Girls",
+      "Savage",
+      "Drama"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-35",
+    "category": "kpop",
+    "prompt": "Quels groupes ont partagé le prix de « Best New Artist » (Rookie de l'année) aux MAMA 2025 ?",
+    "choices": [
+      "CORTIS & Hearts2Hearts",
+      "TWS & ILLIT",
+      "RIIZE & BABYMONSTER",
+      "BOYNEXTDOOR & MEOVV"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-36",
+    "category": "kpop",
+    "prompt": "Combien de membres compte le groupe de filles f(x) à ses débuts en 2009 ?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "3"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-37",
+    "category": "kpop",
+    "prompt": "Quel boysband a débuté en 2020 via le survival show « I-LAND » ?",
+    "choices": [
+      "Enhypen",
+      "Treasure",
+      "ZEROBASEONE",
+      "BOYNEXTDOOR"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-38",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté les Pentagon en 2018 suite à l'annonce de son couple avec HyunA ?",
+    "choices": [
+      "Dawn",
+      "Hui",
+      "Jinho",
+      "Kino"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-39",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album complet du girlsband ITZY sorti en 2021 ?",
+    "choices": [
+      "Crazy in Love",
+      "It'z Icy",
+      "It'z Me",
+      "Cheshire"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-40",
+    "category": "kpop",
+    "prompt": "Quel groupe de la 2ème génération a reçu le prix spécial « Inspiring Achievement » aux MAMA 2025 ?",
+    "choices": [
+      "Super Junior",
+      "BIGBANG",
+      "SHINee",
+      "2PM"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-41",
+    "category": "kpop",
+    "prompt": "Quel est le vrai prénom de la célèbre soliste et ancienne membre d'I.O.I, Chungha ?",
+    "choices": [
+      "Kim Chan-mi",
+      "Kim Chung-ha",
+      "Park Bom",
+      "Ahn Hyo-jin"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-42",
+    "category": "kpop",
+    "prompt": "En quelle année le boysband ATEEZ a-t-il fait ses débuts officiels ?",
+    "choices": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-43",
+    "category": "kpop",
+    "prompt": "Quelle membre a quitté le groupe Cherry Bullet en 2019 avant la dissolution totale du groupe plus tard ?",
+    "choices": [
+      "Kokoro",
+      "Bora",
+      "Jiwon",
+      "May"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-44",
+    "category": "kpop",
+    "prompt": "Quel est le nom du premier album studio de LE SSERAFIM sorti en 2023 ?",
+    "choices": [
+      "Unforgiven",
+      "Fearless",
+      "Antifragile",
+      "Crazy"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-45",
+    "category": "kpop",
+    "prompt": "Quelle chanson d'aespa a remporté le prix de la « Meilleure Chorégraphie » aux MAMA 2025 ?",
+    "choices": [
+      "Whiplash",
+      "Supernova",
+      "Drama",
+      "Savage"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-46",
+    "category": "kpop",
+    "prompt": "Combien de membres actifs compte le groupe NCT dans sa totalité (toutes unités confondues fin 2024/2025) ?",
+    "choices": [
+      "26",
+      "23",
+      "21",
+      "28"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-47",
+    "category": "kpop",
+    "prompt": "Quel boysband temporaire a été formé par le survival « Boys Planet » et a débuté en 2023 ?",
+    "choices": [
+      "ZEROBASEONE",
+      "EVNNE",
+      "TWS",
+      "RIIZE"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-48",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté le boysband de la JYP, DAY6, en décembre 2021 ?",
+    "choices": [
+      "Jae",
+      "Junhyeok",
+      "Wonpil",
+      "Dowoon"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-49",
+    "category": "kpop",
+    "prompt": "Quel est le titre du mini album du groupe NewJeans sorti en juin 2024 ?",
+    "choices": [
+      "Supernatural",
+      "OMG",
+      "Get Up",
+      "New Jeans"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-50",
+    "category": "kpop",
+    "prompt": "Quel groupe de filles a remporté le prix « World's Favorite Group » lors des MAMA Awards 2025 ?",
+    "choices": [
+      "IVE",
+      "NewJeans",
+      "aespa",
+      "LE SSERAFIM"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-51",
+    "category": "kpop",
+    "prompt": "Quel est le vrai nom de la rappeuse et leader de (G)I-DLE, Soyeon ?",
+    "choices": [
+      "Jeon So-yeon",
+      "Kim So-yeon",
+      "Park So-yeon",
+      "Lee So-yeon"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-52",
+    "category": "kpop",
+    "prompt": "En quelle année le boysband mondialement connu BTS a-t-il fait ses débuts ?",
+    "choices": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "kpop-53",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté le groupe de hip-hop iKON en 2019 ?",
+    "choices": [
+      "B.I",
+      "Bobby",
+      "Jay",
+      "June"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-54",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album studio de TWICE sorti en 2017 ?",
+    "choices": [
+      "Twicetagram",
+      "Eyes Wide Open",
+      "Formula of Love",
+      "Signal"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-55",
+    "category": "kpop",
+    "prompt": "Quelle chanson iconique a remporté le Daesang de la « Chanson de l'Année » aux MAMA 2025 ?",
+    "choices": [
+      "Home sweet home (G-Dragon)",
+      "APT. (Rosé & Bruno Mars)",
+      "Whiplash (aespa)",
+      "Sticky (KISS OF LIFE)"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-56",
+    "category": "kpop",
+    "prompt": "Combien de membres compte officiellement le groupe masculin ZEROBASEONE en 2025 ?",
+    "choices": [
+      "7",
+      "9",
+      "11",
+      "12"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-57",
+    "category": "kpop",
+    "prompt": "Quel girlsband de la 5ème génération a été formé par l'agence HYBE (Belift Lab) en 2024 ?",
+    "choices": [
+      "ILLIT",
+      "KATSEYE",
+      "UNIS",
+      "MEOVV"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-58",
+    "category": "kpop",
+    "prompt": "Quelle membre a quitté le groupe Weeekly en 2022 pour des raisons de santé ?",
+    "choices": [
+      "Jiyoon",
+      "Soeun",
+      "Jihan",
+      "Zoa"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-59",
+    "category": "kpop",
+    "prompt": "Quel est le titre du tout premier album studio de SEVENTEEN sorti en 2016 ?",
+    "choices": [
+      "Love & Letter",
+      "Teen, Age",
+      "An Ode",
+      "Face the Sun"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-60",
+    "category": "kpop",
+    "prompt": "Quel groupe a remporté la catégorie « Best Music Video » aux MAMA Awards 2025 ?",
+    "choices": [
+      "Stray Kids",
+      "Seventeen",
+      "Blackpink",
+      "Kiikiii"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "kpop-61",
+    "category": "kpop",
+    "prompt": "Quel est le vrai nom de Suga, membre de BTS ?",
+    "choices": [
+      "Min Yoon-gi",
+      "Jung Ho-seok",
+      "Kim Nam-joon",
+      "Kim Seok-jin"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-62",
+    "category": "kpop",
+    "prompt": "En quelle année le girlsband Mamamoo a-t-il débuté ?",
+    "choices": [
+      "2012",
+      "2013",
+      "2014",
+      "2015"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "kpop-63",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté le groupe TREASURE à la fin de l'année 2022 (avec Mashiho) ?",
+    "choices": [
+      "Bang Yedam",
+      "Asahi",
+      "Haruto",
+      "Choi Hyun-suk"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-64",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album complet de BLACKPINK sorti en 2020 ?",
+    "choices": [
+      "The Album",
+      "Born Pink",
+      "Square One",
+      "Kill This Love"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-65",
+    "category": "kpop",
+    "prompt": "Quel artiste solo masculin a marqué l'année 2025/2026 avec son grand retour après son service militaire ?",
+    "choices": [
+      "J-Hope (BTS)",
+      "Jin (BTS)",
+      "Taemin",
+      "Baekhyun"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-66",
+    "category": "kpop",
+    "prompt": "Combien de membres composent à l'origine le groupe masculin Tomorrow X Together (TXT) ?",
+    "choices": [
+      "4",
+      "5",
+      "7",
+      "9"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-67",
+    "category": "kpop",
+    "prompt": "Quel boysband de la 5ème génération a débuté chez Pledis Entertainment en janvier 2024 ?",
+    "choices": [
+      "TWS",
+      "RIIZE",
+      "NEXZ",
+      "ALL(H)OURS"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-68",
+    "category": "kpop",
+    "prompt": "Quelle membre a quitté le groupe Oh My Girl en mai 2022 ?",
+    "choices": [
+      "Jiho",
+      "YooA",
+      "Arin",
+      "Mimi"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-69",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album complet coréen d'ATEEZ sorti fin 2019 ?",
+    "choices": [
+      "Treasure EP.Fin: All to Action",
+      "Fever Part 1",
+      "The World Ep.Fin",
+      "Outlaw"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-70",
+    "category": "kpop",
+    "prompt": "Quel girlsband a remporté le prix « Best Vocal Performance Group » aux MAMA 2025 ?",
+    "choices": [
+      "Davichi",
+      "KISS OF LIFE",
+      "BABYMONSTER",
+      "aespa"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-71",
+    "category": "kpop",
+    "prompt": "Quel est le vrai nom de la rappeuse Giselle du groupe aespa ?",
+    "choices": [
+      "Uchinaga Aeri",
+      "Kim Ae-ri",
+      "Lee Chae-rin",
+      "Park Soo-young"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-72",
+    "category": "kpop",
+    "prompt": "En quelle année le boysband BTOB a-t-il fait ses débuts ?",
+    "choices": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "kpop-73",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté le boysband de la SM, EXO, en premier en 2014 ?",
+    "choices": [
+      "Kris",
+      "Luhan",
+      "Tao",
+      "Lay"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-74",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album studio complet du girlsband NMIXX sorti en 2024 ?",
+    "choices": [
+      "Fe3O4: BREAK",
+      "Ad Mare",
+      "Entwurf",
+      "Expergo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-75",
+    "category": "kpop",
+    "prompt": "Quel boysband a décroché le prix de la « Meilleure Performance Masculine » aux MAMA 2025 ?",
+    "choices": [
+      "Enhypen",
+      "Stray Kids",
+      "Ateez",
+      "Riize"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "kpop-76",
+    "category": "kpop",
+    "prompt": "Combien de membres font initialement partie du girlsband de la 5ème génération MEOVV (The Black Label) ?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-77",
+    "category": "kpop",
+    "prompt": "Quel girlsband phare de la 3ème génération a débuté en 2015 chez JYP Entertainment ?",
+    "choices": [
+      "TWICE",
+      "ITZY",
+      "miss A",
+      "NMIXX"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-78",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté le groupe VIXX en 2020 ?",
+    "choices": [
+      "Hongbin",
+      "N",
+      "Leo",
+      "Ravi"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-79",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album studio complet de ENHYPEN sorti en 2021 ?",
+    "choices": [
+      "Dimension: Dilemma",
+      "Border: Day One",
+      "Manifesto: Day 1",
+      "Romance: Untold"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-80",
+    "category": "kpop",
+    "prompt": "Quel artiste de kpop a été sacré « Favorite Global Trendsetter » aux récents MAMA Awards 2025 ?",
+    "choices": [
+      "NewJeans",
+      "G-Dragon",
+      "Jennie",
+      "LE SSERAFIM"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-81",
+    "category": "kpop",
+    "prompt": "Quel est le vrai nom de Hoshi, le leader de la performance team de SEVENTEEN ?",
+    "choices": [
+      "Kwon Soon-young",
+      "Lee Ji-hoon",
+      "Jeon Won-woo",
+      "Kim Min-gyu"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-82",
+    "category": "kpop",
+    "prompt": "En quelle année le groupe masculin Infinite a-t-il débuté avec « Come Back Again » ?",
+    "choices": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-83",
+    "category": "kpop",
+    "prompt": "Quelle membre a quitté le groupe Fromis_9 en juillet 2022 ?",
+    "choices": [
+      "Jang Gyu-ri",
+      "Lee Sae-rom",
+      "Song Ha-young",
+      "Park Ji-won"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-84",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album studio complet de Red Velvet sorti en 2015 ?",
+    "choices": [
+      "The Red",
+      "Perfect Velvet",
+      "Rookie",
+      "The Velvet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-85",
+    "category": "kpop",
+    "prompt": "Quel groupe virtuel masculin a bousculé l'industrie en remportant des prix majeurs en 2024/2025 ?",
+    "choices": [
+      "PLAVE",
+      "MAVE:",
+      "SUPERKIND",
+      "ISEGYE IDOL"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-86",
+    "category": "kpop",
+    "prompt": "Combien de membres comptait le groupe originel de filles GFRIEND lors de ses débuts ?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "kpop-87",
+    "category": "kpop",
+    "prompt": "Quel boysband de la 5ème génération a été formé via l'émission « LOUD » et a débuté chez JYP ?",
+    "choices": [
+      "NEXZ",
+      "TNX",
+      "TWS",
+      "KickFlip"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "kpop-88",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté le groupe AB6IX en 2020 ?",
+    "choices": [
+      "Lim Young-min",
+      "Park Woo-jin",
+      "Lee Dae-hwi",
+      "Jeon Woong"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-89",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album studio de STAYC sorti à l'été 2024 ?",
+    "choices": [
+      "Metamorphic",
+      "Teenage Luv",
+      "Young-Luv.com",
+      "Stereotype"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-90",
+    "category": "kpop",
+    "prompt": "Quel célèbre producteur et CEO a reçu un « Lifetime Achievement Award » pour sa contribution à la K-Pop mondiale fin 2025 ?",
+    "choices": [
+      "J.Y. Park",
+      "Bang Si-hyuk",
+      "Teddy Park",
+      "Lee Soo-man"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-91",
+    "category": "kpop",
+    "prompt": "Quel est le vrai nom de la chanteuse Rosé de BLACKPINK ?",
+    "choices": [
+      "Roseanne Park",
+      "Park Chae-young",
+      "Park Ji-young",
+      "Kim Chae-won"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-92",
+    "category": "kpop",
+    "prompt": "En quelle année le légendaire groupe de garçons SHINee a-t-il fêté ses 15 ans de carrière ?",
+    "choices": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "kpop-93",
+    "category": "kpop",
+    "prompt": "Quelle membre a quitté le groupe Kep1er en 2024 à la fin de son contrat initial (avec Mashiro) ?",
+    "choices": [
+      "Yeseo",
+      "Chaehyun",
+      "Hikaru",
+      "Xiaoting"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-94",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album complet de la discographie de The Boyz sorti en 2020 ?",
+    "choices": [
+      "Reveal",
+      "Breaking Dawn",
+      "Maverick",
+      "Phantasy"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-95",
+    "category": "kpop",
+    "prompt": "Quelle collaboration féminine explosive a remporté le titre de « Best Collaboration » aux MAMA 2025 ?",
+    "choices": [
+      "Jennie & Matt Champion",
+      "Rosé & Bruno Mars",
+      "IU & Suga",
+      "Bibi & Becky G"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-96",
+    "category": "kpop",
+    "prompt": "Combien de membres officiels composent le groupe de filles ITZY depuis ses débuts ?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "kpop-97",
+    "category": "kpop",
+    "prompt": "Quel boysband a débuté en 2024 sous le label KOZ Entertainment (créé par Zico) ?",
+    "choices": [
+      "BOYNEXTDOOR",
+      "TWS",
+      "AMPERS&ONE",
+      "FANTASY BOYS"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-98",
+    "category": "kpop",
+    "prompt": "Quel membre a quitté le groupe ToppDogg (devenu XENO-T) pour poursuivre une carrière solo sous le nom de Hansol / Minsung ?",
+    "choices": [
+      "Hansol",
+      "Kidoh",
+      "Gohn",
+      "P-Goon"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-99",
+    "category": "kpop",
+    "prompt": "Quel est le titre du premier album complet du groupe de filles Kep1er sorti en 2024 ?",
+    "choices": [
+      "Kep1going On",
+      "Troubleshooter",
+      "Lovestruck!",
+      "First Impact"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "kpop-100",
+    "category": "kpop",
+    "prompt": "Quel boysband a remporté le titre de « Favorite Dance Performance Male Group » aux MAMA 2025 ?",
+    "choices": [
+      "Seventeen",
+      "Stray Kids",
+      "NCT 127",
+      "RIIZE"
+    ],
+    "correctIndex": 3
+  }
+]
