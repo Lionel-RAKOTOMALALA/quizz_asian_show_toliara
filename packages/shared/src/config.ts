@@ -9,10 +9,11 @@ export const QUIZ_CONFIG = {
   choicesPerQuestion: 4,
 
   /**
-   * Chrono **global** : 5 minutes pour l'ensemble des 20 questions
-   * (et non un chrono par question).
+   * Chrono **global** : 1 minute pour l'ensemble des 20 questions
+   * (et non un chrono par question). Soit environ 3 secondes par question :
+   * l'épreuve est volontairement une course de vitesse.
    */
-  secondsGlobal: 300,
+  secondsGlobal: 60,
 
   /** Nombre de qualifiés d'office pour le 2e tour (les N meilleurs scores). */
   qualifiedCount: 6,

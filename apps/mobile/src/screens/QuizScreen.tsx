@@ -58,7 +58,9 @@ export function QuizScreen({
   const answered = index;
   const left = questions.length - index;
   const progress = answered / questions.length;
-  const low = remaining <= 30;
+  // Alerte sur le dernier quart du temps, quelle que soit la durée réglée :
+  // un seuil fixe passerait en rouge à mi-parcours sur un chrono court.
+  const low = remaining <= Math.max(5, Math.round(secondsGlobal * 0.25));
 
   function choose(choiceIndex: number) {
     onAnswer(question, choiceIndex, Date.now() - questionStart.current);

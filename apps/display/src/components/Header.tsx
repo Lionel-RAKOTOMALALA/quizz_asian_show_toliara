@@ -54,9 +54,6 @@ export function Header({ tab, onTab, connected, degraded }: Props) {
           onClick={() => onTab("slideshow")}
           label="2e tour — Diaporama"
         />
-        <span className="ml-3 text-[12px] text-muted-dim">
-          App participant →
-        </span>
       </nav>
     </header>
   );

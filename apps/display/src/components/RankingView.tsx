@@ -126,7 +126,7 @@ export function RankingView({
         <section className="flex flex-1 flex-col rounded-3xl border border-panel-border bg-panel p-6">
           <h2 className="eyebrow">Qualifié·e·s — 2e tour</h2>
           <p className="mt-2 text-[11px] leading-relaxed text-muted-dim">
-            Les {QUIZ_CONFIG.qualifiedCount} premiers accèdent à l&apos;épreuve
+            Les {QUIZ_CONFIG.qualifiedCount} {" "} premiers accèdent à l&apos;épreuve
             de reconnaissance d&apos;images : silhouette, puis révélation de la
             photo.
           </p>

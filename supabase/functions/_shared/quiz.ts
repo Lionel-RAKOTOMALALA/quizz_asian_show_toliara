@@ -19,7 +19,7 @@ export const QUIZ_CONFIG = {
   questionsPerSession: 20,
   choicesPerQuestion: 4,
   /** Chrono global pour l'ensemble des questions, en secondes. */
-  secondsGlobal: 300,
+  secondsGlobal: 60,
   qualifiedCount: 6,
   /** Un sans-faute qualifie même hors du top N. */
   perfectScoreQualifies: true,
