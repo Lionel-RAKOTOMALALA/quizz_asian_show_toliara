@@ -115,24 +115,30 @@ Deno.serve(async (req) => {
   const score = (attempts ?? []).filter((a) => a.is_correct).length;
   const answered = (attempts ?? []).length;
   const finished = answered >= QUIZ_CONFIG.questionsPerSession;
+  const totalMs = (attempts ?? []).reduce((sum, a) => sum + a.answer_ms, 0);
 
+  // Enregistré à CHAQUE réponse : c'est ce qui alimente le classement en
+  // direct sur l'écran de projection, via Realtime.
+  const { error: upsertError } = await supabase.from('result').upsert(
+    {
+      session_id: session.id,
+      ticket: session.ticket,
+      player_name: session.player_name,
+      category,
+      score,
+      answered,
+      finished,
+      total_ms: totalMs,
+    },
+    { onConflict: 'session_id' },
+  );
+
+  if (upsertError) return fail(upsertError.message, 500);
+
+  // Le recalcul des qualifiés touche TOUTES les lignes, donc génère un
+  // événement Realtime par participant. On ne le fait qu'en fin d'épreuve,
+  // sinon le canal serait saturé (N participants × 20 réponses).
   if (finished) {
-    const totalMs = (attempts ?? []).reduce((sum, a) => sum + a.answer_ms, 0);
-
-    const { error: upsertError } = await supabase.from('result').upsert(
-      {
-        session_id: session.id,
-        ticket: session.ticket,
-        player_name: session.player_name,
-        category,
-        score,
-        total_ms: totalMs,
-      },
-      { onConflict: 'session_id' },
-    );
-
-    if (upsertError) return fail(upsertError.message, 500);
-
     await recomputeQualified(supabase);
   }
 
@@ -158,9 +164,12 @@ Deno.serve(async (req) => {
 async function recomputeQualified(
   supabase: ReturnType<typeof serviceClient>,
 ): Promise<void> {
+  // Seules les épreuves terminées peuvent qualifier : un score partiel n'est
+  // pas comparable à un score final.
   const { data: ranked } = await supabase
     .from('result')
     .select('id, score')
+    .eq('finished', true)
     .order('score', { ascending: false })
     .order('total_ms', { ascending: true })
     .order('created_at', { ascending: true });

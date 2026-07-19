@@ -102,6 +102,8 @@ interface ResultRow {
   category: Category;
   score: number;
   qualified: boolean;
+  answered: number;
+  finished: boolean;
 }
 
 export const api = {
@@ -136,12 +138,17 @@ export const api = {
 
   /**
    * Classement général, lu directement dans la table `result` (ouverte en
-   * lecture par la RLS). Le rang et la qualification sont calculés ici, à
-   * partir du même tri que le serveur.
+   * lecture par la RLS).
+   *
+   * On ne garde que les épreuves **terminées** : l'écran de résultat du joueur
+   * présente un classement définitif, où afficher des scores partiels
+   * (« 3/20 » après trois questions) induirait en erreur. L'écran de
+   * projection, lui, montre la progression en direct.
    */
   async leaderboard(limit?: number): Promise<LeaderboardEntry[]> {
     const query = [
-      'select=ticket,player_name,category,score,qualified',
+      'select=ticket,player_name,category,score,qualified,answered,finished',
+      'finished=eq.true',
       'order=score.desc,total_ms.asc,created_at.asc',
       limit ? `limit=${limit}` : '',
     ]
@@ -159,6 +166,8 @@ export const api = {
       total: PERFECT_SCORE,
       // `qualified` vient du serveur, qui applique « 20/20 ou top N ».
       qualified: r.qualified,
+      answered: r.answered,
+      finished: r.finished,
     }));
   },
 };

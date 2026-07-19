@@ -63,6 +63,10 @@ export interface LeaderboardEntry {
   score: number;
   total: number;
   qualified: boolean;
+  /** Questions déjà répondues — le score est partiel tant que < `total`. */
+  answered: number;
+  /** `false` tant que l'épreuve est en cours. */
+  finished: boolean;
 }
 
 /** Statistiques d'ensemble affichées sur l'écran de projection. */

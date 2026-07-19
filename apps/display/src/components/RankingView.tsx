@@ -68,14 +68,31 @@ export function RankingView({
                   </p>
                 </div>
 
-                {e.qualified && (
-                  <span className="eyebrow !text-[9px] !text-brand-green">
-                    Qualifié·e
+                {!e.finished ? (
+                  // Épreuve en cours : on montre l'avancement plutôt qu'un
+                  // statut de qualification qui n'a pas encore de sens.
+                  <span className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand-amber" />
+                    <span className="eyebrow !text-[9px] !text-brand-amber">
+                      En cours · {e.answered}/{e.total}
+                    </span>
                   </span>
+                ) : (
+                  e.qualified && (
+                    <span className="eyebrow !text-[9px] !text-brand-green">
+                      Qualifié·e
+                    </span>
+                  )
                 )}
 
                 <span className="tabular w-16 text-right">
-                  <span className="text-[19px] font-extrabold">{e.score}</span>
+                  <span
+                    className={`text-[19px] font-extrabold ${
+                      e.finished ? "" : "text-muted"
+                    }`}
+                  >
+                    {e.score}
+                  </span>
                   <span className="text-[11px] text-muted-dim">
                     /{e.total}
                   </span>

@@ -53,6 +53,26 @@ Deno.serve(async (req) => {
     return fail(error.message, 500);
   }
 
+  // Ligne de classement créée dès l'inscription, avec un score à zéro : sans
+  // elle, un participant n'apparaîtrait à l'écran de projection qu'à sa
+  // première réponse. `finished: false` la distingue d'un score final.
+  const { error: resultError } = await supabase.from('result').insert({
+    session_id: data.id,
+    ticket: data.ticket,
+    player_name: data.player_name,
+    category: data.category,
+    score: 0,
+    answered: 0,
+    finished: false,
+    total_ms: 0,
+  });
+
+  // Une session sans ligne de classement reste jouable : le premier envoi de
+  // réponse la créera. On ne bloque donc pas l'inscription pour autant.
+  if (resultError) {
+    console.error('Création de la ligne de classement :', resultError.message);
+  }
+
   return json(
     {
       sessionId: data.id,
