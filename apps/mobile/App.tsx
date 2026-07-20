@@ -18,11 +18,19 @@ import { BriefScreen } from './src/screens/BriefScreen';
 import { CategoryScreen } from './src/screens/CategoryScreen';
 import { QuizScreen } from './src/screens/QuizScreen';
 import { ResultScreen } from './src/screens/ResultScreen';
+import { BuzzerScreen } from './src/screens/BuzzerScreen';
 import { Round2Screen } from './src/screens/Round2Screen';
 import { TicketScreen } from './src/screens/TicketScreen';
 import { spacing } from './src/theme';
 
-type Step = 'ticket' | 'category' | 'brief' | 'quiz' | 'result' | 'round2';
+type Step =
+  | 'ticket'
+  | 'category'
+  | 'brief'
+  | 'quiz'
+  | 'result'
+  | 'round2'
+  | 'buzzer';
 
 /**
  * Nombre de questions annoncé sur les cartes de catégorie, aligné sur les
@@ -272,7 +280,12 @@ export default function App() {
             rank={leaderboard.find((e) => e.ticket === ticket)?.rank ?? 0}
             finalists={leaderboard.filter((e) => e.qualified)}
             onBack={() => setStep('result')}
+            onOpenBuzzer={() => setStep('buzzer')}
           />
+        )}
+
+        {step === 'buzzer' && (
+          <BuzzerScreen ticket={ticket} onBack={() => setStep('round2')} />
         )}
       </SafeAreaView>
     </SafeAreaProvider>

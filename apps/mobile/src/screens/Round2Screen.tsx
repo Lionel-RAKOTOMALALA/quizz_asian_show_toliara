@@ -2,7 +2,7 @@ import { QUIZ_CONFIG } from '@quizz/shared';
 import type { LeaderboardEntry } from '@quizz/shared';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Celebration } from '../components/Celebration';
-import { Card, SectionLabel } from '../components/ui';
+import { Card, GradientButton, SectionLabel } from '../components/ui';
 import { colors, radius, spacing } from '../theme';
 
 interface Props {
@@ -10,6 +10,8 @@ interface Props {
   rank: number;
   finalists: LeaderboardEntry[];
   onBack: () => void;
+  /** Ouvre le buzzer pour l'épreuve de reconnaissance. */
+  onOpenBuzzer: () => void;
 }
 
 /**
@@ -19,7 +21,13 @@ interface Props {
  * sert qu'à préparer le participant et à lui rappeler son numéro de ticket,
  * avec lequel il sera appelé.
  */
-export function Round2Screen({ ticket, rank, finalists, onBack }: Props) {
+export function Round2Screen({
+  ticket,
+  rank,
+  finalists,
+  onBack,
+  onOpenBuzzer,
+}: Props) {
   const steps: Array<[string, string]> = [
     ['1', 'Une silhouette noire s\'affiche sur grand écran.'],
     ['2', 'Le premier qui reconnaît l\'idole ou le personnage lève la main.'],
@@ -93,6 +101,14 @@ export function Round2Screen({ ticket, rank, finalists, onBack }: Props) {
         <Text style={styles.note}>
           Rends-toi près de la scène et garde ton ticket physique sur toi.
         </Text>
+
+        <View style={styles.cta}>
+          <GradientButton
+            label="Demarrer →"
+            onPress={onOpenBuzzer}
+            gradient={[colors.green, '#0F7C48']}
+          />
+        </View>
 
         <Pressable
           onPress={onBack}
@@ -217,6 +233,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 
+  cta: { alignSelf: 'stretch', marginTop: spacing(6) },
   back: {
     marginTop: spacing(5),
     paddingHorizontal: spacing(6),
