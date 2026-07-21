@@ -1,14 +1,6 @@
 import { QUIZ_CONFIG } from '@quizz/shared';
-import { LinearGradient } from 'expo-linear-gradient';
-import { useEffect, useRef } from 'react';
-import {
-  Animated,
-  Easing,
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Buzzer } from '../components/Buzzer';
 import { Celebration } from '../components/Celebration';
 import { Pill } from '../components/ui';
 import { colors, radius, spacing } from '../theme';
@@ -82,36 +74,12 @@ export function BuzzerScreen({ ticket, onBack }: Props) {
       </View>
 
       <View style={styles.center}>
-        <Animated.View style={{ transform: [{ scale }] }}>
-          <Pressable
-            onPress={() => void buzz()}
-            disabled={locked || mine || busy}
-            accessibilityRole="button"
-            accessibilityLabel="Buzzer"
-            accessibilityState={{ disabled: locked || mine }}
-            style={({ pressed }) => [
-              styles.buzzerWrap,
-              pressed && !locked && !mine && { transform: [{ scale: 0.96 }] },
-            ]}
-          >
-            <LinearGradient
-              colors={
-                mine
-                  ? [colors.green, '#0F7C48']
-                  : locked
-                    ? ['#D9CBD1', '#C6B5BD']
-                    : ['#F2436F', '#C4306A']
-              }
-              start={{ x: 0.2, y: 0 }}
-              end={{ x: 0.8, y: 1 }}
-              style={styles.buzzer}
-            >
-              <Text style={styles.buzzerLabel}>
-                {mine ? 'À TOI !' : locked ? 'BLOQUÉ' : 'BUZZ'}
-              </Text>
-            </LinearGradient>
-          </Pressable>
-        </Animated.View>
+        <Buzzer
+          state={mine ? 'mine' : locked ? 'locked' : 'available'}
+          label={mine ? 'À TOI !' : locked ? 'BLOQUÉ' : 'BUZZ'}
+          onPress={() => void buzz()}
+          disabled={locked || mine || busy}
+        />
 
         <Text style={styles.hint}>
           {mine
